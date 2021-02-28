@@ -18,7 +18,6 @@ export const Timeline = ({ children }: Props) => (
 Timeline.Job = ({
   logo = DefaultLogo,
   logoBackgroundColor,
-  connectorColor,
   company,
   employer,
   title,
@@ -42,7 +41,7 @@ Timeline.Job = ({
   return (
     <li>
       <div className="relative pb-8">
-        <Connector backgroundColor={connectorColor} />
+        <Connector />
         <div className="relative flex items-start space-x-3">
           <LogoWrapper backgroundColor={logoBackgroundColor}>
             {logo}
@@ -111,15 +110,10 @@ Timeline.Milestone = ({
   </>
 );
 
-interface ConnectorProps {
-  backgroundColor?: string;
-}
-
-function Connector({ backgroundColor }: ConnectorProps) {
+function Connector() {
   return (
     <span
       className="absolute top-5 left-5 -ml-px h-full w-0.5 bg-gray-300"
-      style={backgroundColor && { backgroundColor }}
       aria-hidden="true"
     />
   );

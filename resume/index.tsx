@@ -1,9 +1,17 @@
 import { ReactNode } from "react";
 import {
+  AmanoMcGannLogo,
+  BestBuyLogo,
   DefaultLogo,
+  GeneralMillsLogo,
   GnReSoundLogo,
+  ImationLogo,
+  LandOLakesLogo,
   MnWildLogo,
+  QubedLogo,
   RbaLogo,
+  ScholarshipAmericaLogo,
+  SecurianLogo,
   TargetLogo,
 } from "./logos";
 
@@ -54,13 +62,15 @@ export const resume: Resume = {
     //   startDate: new Date(), // TODO
     // },
     {
-      // TODO
+      logo: SecurianLogo,
+      logoBackgroundColor: "#0c7b40",
       title: "Lead JavaScript Developer",
       company: "Securian",
-      employer: "QUBED",
       startDate: new Date("03/01/2018"),
       endDate: new Date("04/01/2021"),
+      employer: "QUBED",
       type: "Consultant",
+      // TODO
       description: "",
       bullets: [],
       technologies: [],
@@ -72,13 +82,15 @@ export const resume: Resume = {
     //   startDate: new Date(), // TODO
     // },
     {
-      // TODO
+      logo: AmanoMcGannLogo,
+      logoBackgroundColor: "#006ba6",
       title: "Lead JavaScript Developer",
       company: "Amano McGann",
-      employer: "QUBED",
       startDate: new Date("01/01/2017"),
       endDate: new Date("02/01/2018"),
+      employer: "QUBED",
       type: "Consultant",
+      // TODO
       description: "",
       bullets: [
         "Architected Amano McGann’s future front-end platform with a development workflow focused on minimal configuration, consistency, and intuitive code patterns using Next.js, Redux, Prettier, and XO.",
@@ -94,13 +106,15 @@ export const resume: Resume = {
       ],
     },
     {
-      // TODO
+      logo: BestBuyLogo,
+      logoBackgroundColor: "#0046be",
       title: "Lead JavaScript Developer",
       company: "Best Buy",
-      employer: "QUBED",
       startDate: new Date("12/01/2014"),
       endDate: new Date("11/01/2016"),
+      employer: "QUBED",
       type: "Consultant",
+      // TODO
       description: "",
       bullets: [
         "Developed A/B tests across many pages of bestbuy.com to determine what features provide the best user experience and increase the overall site conversion.",
@@ -115,13 +129,15 @@ export const resume: Resume = {
       ],
     },
     {
-      // TODO
+      logo: ImationLogo,
+      logoBackgroundColor: "#cf152d",
       title: "Lead JavaScript Developer",
       company: "Imation",
-      employer: "QUBED",
       startDate: new Date("08/01/2014"),
       endDate: new Date("12/01/2014"),
+      employer: "QUBED",
       type: "Consultant",
+      // TODO
       description: "",
       bullets: [
         "Architected an Eloqua email marketing system with support for auto-population and progressive profiling. I designed the system to be lightweight using vanilla JavaScript for DOM manipulation, Lodash, IE8 polyfills, and Jasmine for unit testing.",
@@ -134,13 +150,15 @@ export const resume: Resume = {
       ],
     },
     {
-      // TODO
+      logo: GeneralMillsLogo,
+      logoBackgroundColor: "#0d5195",
       title: "JavaScript Developer",
       company: "General Mills",
-      employer: "QUBED",
       startDate: new Date("11/01/2013"),
       endDate: new Date("08/01/2014"),
+      employer: "QUBED",
       type: "Consultant",
+      // TODO
       description: "",
       bullets: [
         "Contributed to the internal shared component framework used by core websites such as bettycrocker.com, pillsbury.com, tablespoon.com, and more.",
@@ -156,19 +174,23 @@ export const resume: Resume = {
       ],
     },
     {
-      // TODO
+      logo: QubedLogo,
+      logoBackgroundColor: "#27272a",
       milestone: "Founded QUBED, INC",
+      // TODO
       startDate: new Date("08/01/2013"), // TODO: verify this date
+      description: "",
     },
     {
-      // TODO
-      connectorColor: "#c7242d",
+      logo: ScholarshipAmericaLogo,
+      logoBackgroundColor: "#dad9d6",
       title: "Web Developer",
       company: "Scholarship America",
-      employer: "RBA",
       startDate: new Date("09/01/2013"),
       endDate: new Date("11/01/2013"),
+      employer: "RBA",
       type: "Consultant",
+      // TODO
       description: "",
       bullets: [
         "Used Knockout to build a client-side data-driven form builder and viewer.",
@@ -181,13 +203,13 @@ export const resume: Resume = {
     },
     {
       // TODO
-      connectorColor: "#c7242d",
       title: "Web Developer",
       company: "H.B. Fuller",
-      employer: "RBA",
       startDate: new Date("10/01/2011"),
       endDate: new Date("09/01/2013"),
+      employer: "RBA",
       type: "Consultant",
+      // TODO
       description: "",
       bullets: [
         "Refactored existing business logic to improve developer productivity, unit testing capabilities, code maintainability, and overall system stability.",
@@ -205,13 +227,13 @@ export const resume: Resume = {
     },
     {
       // TODO
-      connectorColor: "#c7242d",
       title: "Web Developer",
       company: "T-Chek",
-      employer: "RBA",
       startDate: new Date("06/01/2012"),
       endDate: new Date("12/01/2012"),
+      employer: "RBA",
       type: "Consultant",
+      // TODO
       description: "",
       bullets: [
         "Enterprise-based WCF service development using SOLID design patterns and Moq unit testing.",
@@ -224,14 +246,15 @@ export const resume: Resume = {
       ],
     },
     {
-      // TODO
-      connectorColor: "#c7242d",
+      logo: LandOLakesLogo,
+      logoBackgroundColor: "#ec1f32",
       title: "Web Developer",
       company: "Land O’Lakes",
-      employer: "RBA",
       startDate: new Date("02/01/2011"),
       endDate: new Date("10/01/2011"),
+      employer: "RBA",
       type: "Consultant",
+      // TODO
       description: "",
       bullets: [
         "Participated in the new development of a KPI dashboard using VB.NET and ASP.NET 4.0.",
@@ -246,22 +269,23 @@ export const resume: Resume = {
       ],
     },
     {
-      // TODO
       logo: RbaLogo,
       logoBackgroundColor: "#c7242d",
       milestone: "Joined RBA",
       startDate: new Date("02/01/2011"),
+      // TODO
+      description: "",
     },
     {
-      // TODO
       logo: GnReSoundLogo,
       logoBackgroundColor: "#aa1835",
       title: "Web Developer",
       company: "GN ReSound",
-      employer: "TEKsystems",
       startDate: new Date("09/01/2010"),
       endDate: new Date("02/01/2011"),
+      employer: "TEKsystems",
       type: "Contract",
+      // TODO
       description: "",
       bullets: [
         "Supported five SharePoint sites and two ASP.NET e-commerce solutions.",
@@ -283,12 +307,12 @@ export const resume: Resume = {
     {
       logo: MnWildLogo,
       logoBackgroundColor: "#124734",
-      connectorColor: "#124734",
       title: "Web Developer",
       employer: "Minnesota Wild",
       startDate: new Date("04/01/2010"),
       endDate: new Date("09/01/2010"),
       type: "Internship",
+      // TODO
       description: "",
       bullets: [
         "Gained experience in the full software development life cycle.",
@@ -306,8 +330,12 @@ export const resume: Resume = {
       startDate: new Date("04/01/2008"),
       endDate: new Date("09/01/2010"),
       type: "FTE",
-      description:
-        "Hardware, software, and event support for SPAC and Minnesota Wild employees and coaching staff. Go Wild!",
+      description: (
+        <>
+          Hardware, software, and event support for SPAC and Minnesota Wild
+          employees and coaching staff. Go Wild!
+        </>
+      ),
       bullets: [
         "Scripted a fully automated operating system and software installation process",
         "Built a dynamic login script for file and printer mappings using Active Directory group filtering",
@@ -323,8 +351,12 @@ export const resume: Resume = {
       endDate: new Date("04/01/2008"),
       employer: "Ajilon",
       type: "Contract",
-      description:
-        "Remotely guided several hardware and software rollouts to Target stores around the United States.",
+      description: (
+        <>
+          Remotely guided several hardware and software rollouts to Target
+          stores around the United States.
+        </>
+      ),
       bullets: [
         "Scripted repetitive tasks to prevent human error",
         "Developed custom tools using C# to assist in fluid software rollouts",
@@ -338,8 +370,12 @@ export const resume: Resume = {
       startDate: new Date("05/01/2005"),
       endDate: new Date("03/01/2007"),
       type: "Owner",
-      description:
-        "Started this company to help small businesses in the Anoka, MN area connect with their customers over the web.",
+      description: (
+        <>
+          Started this company to help small businesses in the Anoka, MN area
+          connect with their customers over the web.
+        </>
+      ),
       bullets: [
         "Designed and developed an innovative website to market our services",
         "Reorganized Postmatic's website for ease of use and introduced a web-based contact form",
@@ -368,29 +404,28 @@ export const resume: Resume = {
   ],
 };
 
-type Event = Job | Milestone;
-
 export interface Job {
   logo?: ReactNode;
   logoBackgroundColor?: string;
-  connectorColor?: string;
   title: string;
   company?: string;
   startDate: Date;
   endDate?: Date;
   employer: string;
   type: "Consultant" | "Contract" | "FTE" | "Internship" | "Owner";
-  description: string;
+  description: ReactNode;
   bullets: string[];
   technologies: string[];
 }
 
 export interface Milestone {
-  icon?: ReactNode;
   logo?: ReactNode;
   logoBackgroundColor?: string;
+  icon?: ReactNode;
   milestone: string;
   date?: Date;
   description?: ReactNode;
   connectorVisibile?: boolean;
 }
+
+type Event = Job | Milestone;
