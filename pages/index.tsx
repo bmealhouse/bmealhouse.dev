@@ -20,8 +20,8 @@ export default function Home() {
           <ContactInfo items={[resume.location, resume.email, resume.phone]} />
         </section> */}
         <section>
-          {resume.summary.map((text) => (
-            <p key={text} className="mt-10">
+          {resume.summary.map((text, index) => (
+            <p key={index} className="mt-10">
               {text}
             </p>
           ))}

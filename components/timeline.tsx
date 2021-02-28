@@ -46,11 +46,11 @@ Timeline.Job = ({
           <LogoWrapper backgroundColor={logoBackgroundColor}>
             {logo}
           </LogoWrapper>
-          <div className="min-w-0 flex-1 py-0.5">
+          <div className="min-w-0 flex-1">
             <div className="font-bold leading-tight">
               {title}, {company ? company : employer}
             </div>
-            <div className="-mt-0.5 text-sm text-gray-500">
+            <div className="text-sm text-gray-500">
               {tenure}&nbsp;/&nbsp;{employmentType}
             </div>
             <div className="mt-1 font-light">
@@ -71,9 +71,9 @@ Timeline.Job = ({
 };
 
 Timeline.Milestone = ({
-  icon,
   logo,
   logoBackgroundColor,
+  icon,
   milestone,
   description,
   date,
@@ -128,7 +128,7 @@ function LogoWrapper({ children, backgroundColor }: LogoWrapperProps) {
   return (
     <div className="relative">
       <div
-        className="h-10 w-10 rounded-full flex items-center justify-center ring-8 ring-white bg-gray-200 dark:ring-gray-900 overflow-hidden"
+        className="h-10 w-10 rounded-full flex items-center justify-center ring-8 ring-white bg-gray-700 dark:ring-gray-900 overflow-hidden"
         style={backgroundColor && { backgroundColor }}
       >
         {children}

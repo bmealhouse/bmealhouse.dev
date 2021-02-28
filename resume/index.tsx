@@ -21,7 +21,7 @@ interface Resume {
   location: string;
   email: string;
   phone: string;
-  summary: string[];
+  summary: ReactNode[];
   timeline: Event[];
 }
 
@@ -32,8 +32,17 @@ export const resume: Resume = {
   email: "bmealhouse@gmail.com",
   phone: "***REMOVED***",
   summary: [
-    "I am an independent consultant specializing in full-stack web development. I am passionate about web technologies, automation, and open-source. I continuously evaluate tools to increase my productivity and create more reliable and consistent software. I am committed to delivering value to my customers and leading teams to success.",
-    "I am currently interested in React and serverless Node.js projects.  Let me know how I can help.",
+    <>
+      I’m an independent consultant specializing in{" "}
+      <span className="whitespace-nowrap">full-stack</span> JavaScript web
+      development. I am passionate about web technologies, open-source,
+      continuous delivery, code quality, and automation. I am committed to
+      delivering value to my customers and leading teams to success.
+    </>,
+    <>
+      I am currently interested in React and Node.js projects deployed to the
+      cloud on serverless architecture. Let me know how I can help.
+    </>,
   ],
   timeline: [
     // {
@@ -177,8 +186,8 @@ export const resume: Resume = {
       logo: QubedLogo,
       logoBackgroundColor: "#27272a",
       milestone: "Founded QUBED, INC",
+      date: new Date("08/01/2013"),
       // TODO
-      startDate: new Date("08/01/2013"), // TODO: verify this date
       description: "",
     },
     {
@@ -272,7 +281,7 @@ export const resume: Resume = {
       logo: RbaLogo,
       logoBackgroundColor: "#c7242d",
       milestone: "Joined RBA",
-      startDate: new Date("02/01/2011"),
+      date: new Date("02/01/2011"),
       // TODO
       description: "",
     },
