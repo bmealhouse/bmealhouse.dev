@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export const AmanoMcGannLogo = (
   <Image
-    src="/amano-mcgann-logo.png"
+    src="/amanomcgann-logo.png"
     alt="Amano McGann"
     aria-hidden="true"
     layout="fixed"
@@ -13,8 +13,9 @@ export const AmanoMcGannLogo = (
 
 export const BestBuyLogo = (
   <svg
-    xmlns="http://www.w3.org/2000/svg"
+    className="ml-1"
     viewBox="0 0 1154.9 791.9"
+    xmlns="http://www.w3.org/2000/svg"
     aria-hidden="true"
     focusable="false"
     role="img"
@@ -145,14 +146,25 @@ export const GnReSoundLogo = (
   </svg>
 );
 
+export const HbFullerLogo = (
+  <Image
+    src="/hbfuller-logo.png"
+    alt="H.B. Fuller"
+    aria-hidden="true"
+    layout="fixed"
+    width={28}
+    height={25}
+  />
+);
+
 export const ImationLogo = (
   <Image
     src="/imation-logo.png"
     alt="Imation"
     aria-hidden="true"
     layout="fixed"
-    width={36.5}
-    height={20}
+    width={40}
+    height={22}
   />
 );
 
@@ -212,25 +224,25 @@ export const MnWildLogo = (
 
 export const QubedLogo = (
   <svg
+    viewBox="0 0 30 30"
     xmlns="http://www.w3.org/2000/svg"
-    viewBox="0 0 100 85"
     aria-hidden="true"
     focusable="false"
     role="img"
-    width={50}
-    height={50}
+    width={28}
+    height={28}
   >
-    <polygon
+    <path
       fill="#676767"
-      points="50.7,11.6 50.7,11.6 25.4,26.2 32.5,30.3 50.7,19.7 50.7,19.7 69,30.3 76,26.2"
+      d="M15 .6L2.5 7.8 6 9.84l9-5.24 9.04 5.24 3.46-2.02L15 .59z"
     />
-    <polygon
-      fill="#4d4e4e"
-      points="76,55.4 76,26.2 69,30.3 69,51.4 50.7,61.9 32.4,51.4 32.5,30.3 25.4,26.2 25.4,55.4 50.7,70 50.7,70 50.7,70 50.7,70 50.7,70 76,55.4 76,55.5 76,55.4 76,55.4"
+    <path
+      fill="#4D4E4E"
+      d="M27.5 22.2V7.76l-3.46 2.02v10.43L15 25.4l-9.04-5.2L6 9.8 2.5 7.77v14.42L15 29.41l12.5-7.22v.05-.05z"
     />
-    <polyline fill="#8bc53f" points="50.7,59.2 34.7,50 34.7,31.5 50.7,40.6" />
-    <polygon fill="#bad54f" points="50.7,40.6 34.7,31.5 50.7,22.3 66.7,31.5" />
-    <polygon fill="#a4ce44" points="50.7,59.2 66.7,50 66.7,31.5 50.7,40.6" />
+    <path fill="#8BC53F" d="M14.98 24.05l-7.9-4.54v-9.14l7.9 4.5" />
+    <path fill="#B8D54F" d="M15 14.9l-7.9-4.5L15 5.85l7.9 4.55-7.9 4.5z" />
+    <path fill="#A4CE44" d="M14.97 24.05l7.9-4.54v-9.14l-7.9 4.5v9.18z" />
   </svg>
 );
 
@@ -247,7 +259,7 @@ export const RbaLogo = (
 
 export const ScholarshipAmericaLogo = (
   <Image
-    src="/scholarship-america-logo.png"
+    src="/scholarshipamerica-logo.png"
     alt="Scholarship America"
     aria-hidden="true"
     layout="fixed"
@@ -284,6 +296,25 @@ export const SecurianLogo = (
       d="M9.64 47.34a18.21 18.21 0 004.93-1.22 18.49 18.49 0 0011.07-12.79 18.84 18.84 0 00.45-2.87c0-.47.05-.95.05-1.42s0-1-.05-1.42a18.41 18.41 0 00-11.52-15.67 18.23 18.23 0 00-4.93-1.22 29.3 29.3 0 014.48-4.49A23.76 23.76 0 0131.23 26c0 .24.06.5.08.75q.11 1.12.11 2.27t-.11 2.27c0 .25 0 .5-.08.75a23.74 23.74 0 01-17.1 19.79 28.24 28.24 0 01-4.49-4.49zM55.31 47.34a18.21 18.21 0 01-4.93-1.22 18.49 18.49 0 01-11.06-12.79 18.84 18.84 0 01-.45-2.87c0-.47-.05-.95-.05-1.42s0-1 .05-1.42a18.41 18.41 0 0111.51-15.67 18.23 18.23 0 014.93-1.22 29.3 29.3 0 00-4.48-4.49A23.76 23.76 0 0033.73 26c0 .24-.06.5-.08.75q-.11 1.12-.11 2.27t.11 2.27c0 .25 0 .5.08.75a23.74 23.74 0 0017.1 19.79 28.24 28.24 0 004.48-4.49z"
     />
   </svg>
+);
+
+export const TCheckLogo = (
+  <>
+    <div className="mt-1.5 mr-3">
+      <Image
+        src="/tchek-logo.jpg"
+        alt="T-Chek"
+        aria-hidden="true"
+        layout="fixed"
+        width={38}
+        height={30}
+      />
+      <div
+        className="absolute inset-0 rounded-full"
+        style={{ backgroundColor: "rgba(0, 0, 0, 0.05)" }}
+      />
+    </div>
+  </>
 );
 
 export const TargetLogo = (

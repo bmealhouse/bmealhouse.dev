@@ -5,6 +5,7 @@ import {
   DefaultLogo,
   GeneralMillsLogo,
   GnReSoundLogo,
+  HbFullerLogo,
   ImationLogo,
   LandOLakesLogo,
   MnWildLogo,
@@ -13,6 +14,7 @@ import {
   ScholarshipAmericaLogo,
   SecurianLogo,
   TargetLogo,
+  TCheckLogo,
 } from "./logos";
 
 interface Resume {
@@ -211,7 +213,8 @@ export const resume: Resume = {
       ],
     },
     {
-      // TODO
+      logo: HbFullerLogo,
+      logoBackgroundColor: "#14379f",
       title: "Web Developer",
       company: "H.B. Fuller",
       startDate: new Date("10/01/2011"),
@@ -235,7 +238,8 @@ export const resume: Resume = {
       ],
     },
     {
-      // TODO
+      logo: TCheckLogo,
+      logoBackgroundColor: "#fff",
       title: "Web Developer",
       company: "T-Chek",
       startDate: new Date("06/01/2012"),
@@ -375,7 +379,7 @@ export const resume: Resume = {
     {
       logo: DefaultLogo,
       title: "Co-founder",
-      employer: "Hybrid Computer Technologies, LLC",
+      employer: "Hybrid Computer Technologies",
       startDate: new Date("05/01/2005"),
       endDate: new Date("03/01/2007"),
       type: "Owner",
