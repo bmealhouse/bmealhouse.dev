@@ -1,51 +1,85 @@
+import { ReactNode } from "react";
+import {
+  DefaultLogo,
+  GnReSoundLogo,
+  MnWildLogo,
+  RbaLogo,
+  TargetLogo,
+} from "./logos";
+
 interface Resume {
-  name: string;
+  firstName: string;
+  lastName: string;
   location: string;
+  email: string;
+  phone: string;
   summary: string[];
   timeline: Event[];
 }
 
 export const resume: Resume = {
-  name: "Brent Mealhouse",
+  firstName: "Brent",
+  lastName: "Mealhouse",
   location: "***REMOVED***",
+  email: "bmealhouse@gmail.com",
+  phone: "***REMOVED***",
   summary: [
     "I am an independent consultant specializing in full-stack web development. I am passionate about web technologies, automation, and open-source. I continuously evaluate tools to increase my productivity and create more reliable and consistent software. I am committed to delivering value to my customers and leading teams to success.",
     "I am currently interested in React and serverless Node.js projects.  Let me know how I can help.",
   ],
   timeline: [
+    // {
+    //   // TODO
+    //   icon: "browser-solid.svg",
+    //   milestone: "https://fideldywelldrilling.com",
+    //   startDate: new Date(), // TODO
+    // },
+    // {
+    //   // TODO
+    //   icon: "home-lg-solid.svg",
+    //   milestone: "Moved to forever home",
+    //   description: "My family and I moved to the house my wife grew up in.",
+    //   date: new Date("08/01/2019"), // TODO
+    // },
+    // {
+    //   // TODO
+    //   icon: "code-solid.svg",
+    //   milestone: "Published shifty VS Code extension",
+    //   startDate: new Date(), // TODO
+    // },
+    // {
+    //   // TODO
+    //   icon: "camera-movie-solid.svg",
+    //   milestone: "Published axios-record-replay-adapter",
+    //   startDate: new Date(), // TODO
+    // },
     {
-      milestone: "bmealhouse.dev",
-      startDate: new Date(), // TODO
-    },
-    {
-      milestone: "Fideldy Bros Well Drilling",
-      startDate: new Date(), // TODO
-    },
-    {
-      milestone: "Published shifty",
-      startDate: new Date(), // TODO
-    },
-    {
-      milestone: "Published axios-record-replay-adapter",
-      startDate: new Date(), // TODO
-    },
-    {
-      milestone: "Hill City Assembly of God Church",
-      startDate: new Date(), // TODO
-    },
-    {
-      client: "Securian",
-      company: "QUBED, INC",
+      // TODO
+      title: "Lead JavaScript Developer",
+      company: "Securian",
+      employer: "QUBED",
       startDate: new Date("03/01/2018"),
-      // endDate: new Date("04/01/2021"),
+      endDate: new Date("04/01/2021"),
+      type: "Consultant",
+      description: "",
       bullets: [],
       technologies: [],
     },
+    // {
+    //   // TODO
+    //   icon: "browser-solid.svg",
+    //   milestone: "Published https://hillcitymnag.church",
+    //   startDate: new Date(), // TODO
+    // },
     {
-      client: "Amano McGann",
-      company: "QUBED, INC",
+      // TODO
+      title: "Lead JavaScript Developer",
+      company: "Amano McGann",
+      employer: "QUBED",
       startDate: new Date("01/01/2017"),
       endDate: new Date("02/01/2018"),
+      type: "Consultant",
+      description: "",
       bullets: [
         "Architected Amano McGann’s future front-end platform with a development workflow focused on minimal configuration, consistency, and intuitive code patterns using Next.js, Redux, Prettier, and XO.",
         "Built an interactive visualization using React, Redux, and SVG to help customers understand how to configure their parking rates.",
@@ -60,10 +94,14 @@ export const resume: Resume = {
       ],
     },
     {
-      client: "Best Buy",
-      company: "QUBED, INC",
+      // TODO
+      title: "Lead JavaScript Developer",
+      company: "Best Buy",
+      employer: "QUBED",
       startDate: new Date("12/01/2014"),
       endDate: new Date("11/01/2016"),
+      type: "Consultant",
+      description: "",
       bullets: [
         "Developed A/B tests across many pages of bestbuy.com to determine what features provide the best user experience and increase the overall site conversion.",
         "Transformed A/B testing legacy code to a maintainable architecture using Best Buy’s preferred technologies: Babel, ES2015, Karma, Node.js, Webpack, and more.",
@@ -77,10 +115,14 @@ export const resume: Resume = {
       ],
     },
     {
-      client: "Imation",
-      company: "QUBED, INC",
+      // TODO
+      title: "Lead JavaScript Developer",
+      company: "Imation",
+      employer: "QUBED",
       startDate: new Date("08/01/2014"),
       endDate: new Date("12/01/2014"),
+      type: "Consultant",
+      description: "",
       bullets: [
         "Architected an Eloqua email marketing system with support for auto-population and progressive profiling. I designed the system to be lightweight using vanilla JavaScript for DOM manipulation, Lodash, IE8 polyfills, and Jasmine for unit testing.",
         "Helped the imation.com redesign project release on-time by assisting with EPiServer development. Worked with the Foundation grid system, WOW.js, Greensock, and CSS3 animations.",
@@ -92,10 +134,14 @@ export const resume: Resume = {
       ],
     },
     {
-      client: "General Mills",
-      company: "QUBED, INC",
+      // TODO
+      title: "JavaScript Developer",
+      company: "General Mills",
+      employer: "QUBED",
       startDate: new Date("11/01/2013"),
       endDate: new Date("08/01/2014"),
+      type: "Consultant",
+      description: "",
       bullets: [
         "Contributed to the internal shared component framework used by core websites such as bettycrocker.com, pillsbury.com, tablespoon.com, and more.",
         "Enhanced front-end components using responsive HTML and CSS, Knockout, Jasmine, and Sitecore for multilingual content management.",
@@ -110,14 +156,20 @@ export const resume: Resume = {
       ],
     },
     {
+      // TODO
       milestone: "Founded QUBED, INC",
       startDate: new Date("08/01/2013"), // TODO: verify this date
     },
     {
-      client: "Scholarship America",
-      company: "RBA",
+      // TODO
+      connectorColor: "#c7242d",
+      title: "Web Developer",
+      company: "Scholarship America",
+      employer: "RBA",
       startDate: new Date("09/01/2013"),
       endDate: new Date("11/01/2013"),
+      type: "Consultant",
+      description: "",
       bullets: [
         "Used Knockout to build a client-side data-driven form builder and viewer.",
         "Used JSON.NET to perform serialization and deserialization between Knockout, MVC, and Web API.",
@@ -128,10 +180,15 @@ export const resume: Resume = {
       ],
     },
     {
-      client: "H.B. Fuller",
-      company: "RBA",
+      // TODO
+      connectorColor: "#c7242d",
+      title: "Web Developer",
+      company: "H.B. Fuller",
+      employer: "RBA",
       startDate: new Date("10/01/2011"),
       endDate: new Date("09/01/2013"),
+      type: "Consultant",
+      description: "",
       bullets: [
         "Refactored existing business logic to improve developer productivity, unit testing capabilities, code maintainability, and overall system stability.",
         "Implemented TFS build definitions for continuous integration and NuGet package deployments.",
@@ -147,10 +204,15 @@ export const resume: Resume = {
       ],
     },
     {
-      client: "T-Chek",
-      company: "RBA",
+      // TODO
+      connectorColor: "#c7242d",
+      title: "Web Developer",
+      company: "T-Chek",
+      employer: "RBA",
       startDate: new Date("06/01/2012"),
       endDate: new Date("12/01/2012"),
+      type: "Consultant",
+      description: "",
       bullets: [
         "Enterprise-based WCF service development using SOLID design patterns and Moq unit testing.",
         "Extensive use of LINQ for handling complex collection-based business logic.",
@@ -162,10 +224,15 @@ export const resume: Resume = {
       ],
     },
     {
-      client: "Land O’Lakes",
-      company: "RBA",
+      // TODO
+      connectorColor: "#c7242d",
+      title: "Web Developer",
+      company: "Land O’Lakes",
+      employer: "RBA",
       startDate: new Date("02/01/2011"),
       endDate: new Date("10/01/2011"),
+      type: "Consultant",
+      description: "",
       bullets: [
         "Participated in the new development of a KPI dashboard using VB.NET and ASP.NET 4.0.",
         "Refactored dashboard charting system into a dynamic and consistent solution using ASP.NET 4.0 Charting.",
@@ -179,14 +246,23 @@ export const resume: Resume = {
       ],
     },
     {
+      // TODO
+      logo: RbaLogo,
+      logoBackgroundColor: "#c7242d",
       milestone: "Joined RBA",
       startDate: new Date("02/01/2011"),
     },
     {
-      client: "GN ReSound",
-      company: "TEKsystems",
+      // TODO
+      logo: GnReSoundLogo,
+      logoBackgroundColor: "#aa1835",
+      title: "Web Developer",
+      company: "GN ReSound",
+      employer: "TEKsystems",
       startDate: new Date("09/01/2010"),
       endDate: new Date("02/01/2011"),
+      type: "Contract",
+      description: "",
       bullets: [
         "Supported five SharePoint sites and two ASP.NET e-commerce solutions.",
         "Built command line-based tools to automate everyday SharePoint operations.",
@@ -199,17 +275,21 @@ export const resume: Resume = {
       ],
     },
     {
+      icon: <img src="graduation-cap-solid.svg" alt="graduation-cap" />,
       milestone: "Bachelor of Science, Software Engineering",
-      startDate: new Date("01/01/2010"),
-      // institution: "Brown College",
-      // startDate: new Date("01/01/2008"),
-      // endDate: new Date("01/01/2010"),
+      date: new Date("08/01/2010"),
+      description: "Brown College, August 2010",
     },
     {
-      company: "Minnesota Wild",
-      title: "Web developer intern",
+      logo: MnWildLogo,
+      logoBackgroundColor: "#124734",
+      connectorColor: "#124734",
+      title: "Web Developer",
+      employer: "Minnesota Wild",
       startDate: new Date("04/01/2010"),
       endDate: new Date("09/01/2010"),
+      type: "Internship",
+      description: "",
       bullets: [
         "Gained experience in the full software development life cycle.",
         "Built a web application to manage voucher requests and distribute employee tickets.",
@@ -219,87 +299,98 @@ export const resume: Resume = {
       technologies: ["JavaScript, HTML, CSS, C#, ASP.NET, LINQ, SQL Server"],
     },
     {
-      company: "Minnesota Wild",
-      title: "Helpdesk specialist",
+      logo: MnWildLogo,
+      logoBackgroundColor: "#124734",
+      title: "Helpdesk Specialist",
+      employer: "Minnesota Wild",
       startDate: new Date("04/01/2008"),
       endDate: new Date("09/01/2010"),
+      type: "FTE",
+      description:
+        "Hardware, software, and event support for SPAC and Minnesota Wild employees and coaching staff. Go Wild!",
       bullets: [
-        "Scripted a fully automated operating system and software installation process.",
-        "Built a dynamic login script for file and printer mappings using Active Directory group filtering.",
+        "Scripted a fully automated operating system and software installation process",
+        "Built a dynamic login script for file and printer mappings using Active Directory group filtering",
       ],
       technologies: ["Altiris, batch scripting"],
     },
     {
-      client: "Target",
-      company: "Ajilon",
+      logo: TargetLogo,
+      logoBackgroundColor: "rgb(204, 0, 0)",
+      title: "Rollout Room Technician",
+      company: "Target",
       startDate: new Date("01/01/2006"),
       endDate: new Date("04/01/2008"),
+      employer: "Ajilon",
+      type: "Contract",
+      description:
+        "Remotely guided several hardware and software rollouts to Target stores around the United States.",
       bullets: [
-        "Scripted everyday tasks to prevent human error while completing repetitive tasks.",
-        "Developed tools using C# to assist in fluent software rollouts to Target stores around the US.",
+        "Scripted repetitive tasks to prevent human error",
+        "Developed custom tools using C# to assist in fluid software rollouts",
       ],
       technologies: ["C#, batch scripting"],
     },
     {
-      company: "Hybrid Computer Technologies, LLC",
-      title: "Co-founder / Web developer",
+      logo: DefaultLogo,
+      title: "Co-founder",
+      employer: "Hybrid Computer Technologies, LLC",
       startDate: new Date("05/01/2005"),
       endDate: new Date("03/01/2007"),
+      type: "Owner",
+      description:
+        "Started this company to help small businesses in the Anoka, MN area connect with their customers over the web.",
       bullets: [
-        "Designed and developed an innovative website to market our services.",
-        "Reorganized Postmatic, Inc. website, ensuring a user-friendly environment and additional contact method.",
-        "Designed and developed a professional and resourceful website for CPR Professionals, allowing their target audience to communicate with them over the web.",
+        "Designed and developed an innovative website to market our services",
+        "Reorganized Postmatic's website for ease of use and introduced a web-based contact form",
+        "Designed and developed a professional and resourceful website for CPR Professionals",
       ],
       technologies: ["JavaScript, HTML, CSS, PHP"],
     },
     {
-      milestone: "Co-founded Hybrid Computer Technologies, LLC",
-      startDate: new Date("05/01/2005"),
-    },
-    {
+      icon: <img src="graduation-cap-solid.svg" alt="graduation-cap" />,
       milestone: "Associates of Arts, Information Technology",
-      startDate: new Date("01/01/2005"),
-      // institution: "Brown College",
-      // startDate: new Date("01/01/2003"),
-      // endDate: new Date("01/01/2005"),
+      date: new Date("12/01/2005"),
+      description: "Brown College, December 2005",
     },
     {
-      milestone: "Wrote my first computer program",
-      startDate: new Date("01/01/2000"),
+      icon: <img src="calculator-solid.svg" alt="calculator" />,
+      milestone: "First computer program",
+      date: new Date("01/01/2000"),
+      description: (
+        <>
+          Wrote my first computer program in BASIC to solve high school math
+          problems on a <span className="whitespace-nowrap">TI-86</span>{" "}
+          graphing calculator.
+        </>
+      ),
     },
   ],
 };
 
-type Event = Contract | FulltimeJob | Milestone | SideProject;
+type Event = Job | Milestone;
 
-interface BaseEvent {
+export interface Job {
+  logo?: ReactNode;
+  logoBackgroundColor?: string;
+  connectorColor?: string;
+  title: string;
+  company?: string;
   startDate: Date;
   endDate?: Date;
-}
-
-export interface Contract extends BaseEvent {
-  client: string;
-  company: string;
+  employer: string;
+  type: "Consultant" | "Contract" | "FTE" | "Internship" | "Owner";
+  description: string;
   bullets: string[];
   technologies: string[];
 }
 
-export interface FulltimeJob extends BaseEvent {
-  company: string;
-  title: string;
-  bullets: string[];
-  technologies: string[];
-}
-
-export interface Milestone extends BaseEvent {
+export interface Milestone {
+  icon?: ReactNode;
+  logo?: ReactNode;
+  logoBackgroundColor?: string;
   milestone: string;
-}
-
-interface SideProject extends BaseEvent {}
-
-interface Degree {
-  institution: string;
-  startDate: Date;
-  endDate: Date;
-  degree: string;
+  date?: Date;
+  description?: ReactNode;
+  connectorVisibile?: boolean;
 }
