@@ -1,5 +1,5 @@
 import Head from "next/head";
-import { ContactInfo, Timeline } from "../components";
+import { BackToTopRocket, Timeline } from "../components";
 import { resume, Job, Milestone } from "../resume";
 
 export default function Home() {
@@ -15,13 +15,18 @@ export default function Home() {
         <link rel="stylesheet" href="https://rsms.me/inter/inter.css" />
       </Head>
       <main className="max-w-2xl px-3 tracking-tight">
-        <h1 className="text-5xl xs:text-6xl sm:text-7xl md:text-8xl font-bold uppercase">
+        <h1 className="text-5xl xs:text-6xl sm:text-7xl md:text-8xl -ml-0.5 sm:-ml-1 font-bold uppercase">
           <span className="block">{resume.firstName}</span>
           <span className="block">{resume.lastName}</span>
         </h1>
-        {/* <section className="mt-3">
-          <ContactInfo items={[resume.location, resume.email, resume.phone]} />
-        </section> */}
+        <section className="mt-0.5 md:mt-1.5 text-sm font-medium">
+          <a
+            className="border-b-4 border-yellow-200 hover:border-yellow-300"
+            href={`mailto:${resume.email}`}
+          >
+            {resume.email}
+          </a>
+        </section>
         <section>
           {resume.summary.map((text, index) => (
             <p key={index} className="mt-10">
@@ -58,6 +63,7 @@ export default function Home() {
           />
         </Timeline>
       </main>
+      <BackToTopRocket />
     </div>
   );
 }

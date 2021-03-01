@@ -12,6 +12,7 @@ module.exports = {
     extend: {
       colors: {
         gray: colors.gray,
+        yellow: colors.amber,
       },
       fontFamily: {
         sans: ["Inter", ...defaultTheme.fontFamily.sans],

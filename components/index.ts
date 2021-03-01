@@ -1,2 +1,2 @@
-export { ContactInfo } from "./contact-info";
+export { BackToTopRocket } from "./back-to-top-rocket";
 export { Timeline } from "./timeline";

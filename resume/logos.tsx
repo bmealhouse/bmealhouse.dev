@@ -13,7 +13,7 @@ export const AmanoMcGannLogo = (
 
 export const BestBuyLogo = (
   <svg
-    className="ml-1"
+    className="mt-0.5 ml-1"
     viewBox="0 0 1154.9 791.9"
     xmlns="http://www.w3.org/2000/svg"
     aria-hidden="true"
@@ -311,7 +311,7 @@ export const TCheckLogo = (
       />
       <div
         className="absolute inset-0 rounded-full"
-        style={{ backgroundColor: "rgba(0, 0, 0, 0.05)" }}
+        style={{ backgroundColor: "rgb(0 0 0 / 6%)" }}
       />
     </div>
   </>
