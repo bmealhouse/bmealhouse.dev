@@ -37,14 +37,17 @@ export const resume: Resume = {
   summary: [
     <>
       I’m an independent consultant specializing in{" "}
-      <span className="whitespace-nowrap">full-stack</span> JavaScript web
-      development. I am passionate about web technologies, open-source,
-      continuous delivery, code quality, and automation. I am committed to
-      delivering value to my customers and leading teams to success.
+      <span className="whitespace-nowrap">full-stack</span> JavaScript
+      development. <span className="whitespace-nowrap">I am</span> passionate
+      about web technologies, open-source, continuous delivery, code quality,
+      and automation. <span className="whitespace-nowrap">I am</span> committed
+      to delivering value to my customers and leading teams{" "}
+      <span className="whitespace-nowrap">to success.</span>
     </>,
     <>
-      I am currently interested in React and Node.js projects deployed to the
-      cloud on serverless architecture. Let me know how I can help.
+      I am currently interested in cloud-based React and Node.js projects using
+      serverless architecture. Let me know how I{" "}
+      <span className="whitespace-nowrap">can help.</span>
     </>,
   ],
   timeline: [
@@ -348,8 +351,9 @@ export const resume: Resume = {
       type: "Internship",
       description: (
         <>
-          Worked alongside the Director of IT to deliver various programming
-          projects <span className="whitespace-nowrap">to production.</span>
+          Worked alongside the Director of IT to build and deploy various
+          programming projects{" "}
+          <span className="whitespace-nowrap">to production.</span>
         </>
       ),
       bullets: [

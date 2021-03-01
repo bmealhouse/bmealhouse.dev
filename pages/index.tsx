@@ -14,7 +14,7 @@ export default function Home() {
         <meta name="description" content="" />
         <link rel="stylesheet" href="https://rsms.me/inter/inter.css" />
       </Head>
-      <main className="max-w-2xl px-3 tracking-tight">
+      <main className="max-w-2xl pl-3 tracking-tight">
         <h1 className="text-5xl xs:text-6xl sm:text-7xl md:text-8xl -ml-0.5 sm:-ml-1 font-bold uppercase">
           <span className="block">{resume.firstName}</span>
           <span className="block">{resume.lastName}</span>
@@ -27,41 +27,46 @@ export default function Home() {
             {resume.email}
           </a>
         </section>
-        <section>
-          {resume.summary.map((text, index) => (
-            <p key={index} className="mt-10">
-              {text}
-            </p>
-          ))}
-        </section>
-        <Timeline>
-          {resume.timeline.map((event) => {
-            const job = event as Job;
-            if (job.employer) {
-              return (
-                <Timeline.Job
-                  key={job.employer + job.title + job.company}
-                  {...job}
-                />
-              );
-            }
+        <div className="pr-8">
+          <section>
+            {resume.summary.map((text, index) => (
+              <p key={index} className="mt-10">
+                {text}
+              </p>
+            ))}
+          </section>
+          <Timeline>
+            {resume.timeline.map((event) => {
+              const job = event as Job;
+              if (job.employer) {
+                return (
+                  <Timeline.Job
+                    key={job.employer + job.title + job.company}
+                    {...job}
+                  />
+                );
+              }
 
-            const milestone = event as Milestone;
-            if (milestone.milestone) {
-              return (
-                <Timeline.Milestone key={milestone.milestone} {...milestone} />
-              );
-            }
+              const milestone = event as Milestone;
+              if (milestone.milestone) {
+                return (
+                  <Timeline.Milestone
+                    key={milestone.milestone}
+                    {...milestone}
+                  />
+                );
+              }
 
-            return null;
-          })}
-          <Timeline.Milestone
-            icon={<img src="baby-solid.svg" alt="baby" />}
-            milestone="Born"
-            date={new Date("***REMOVED***")}
-            connectorVisibile={false}
-          />
-        </Timeline>
+              return null;
+            })}
+            <Timeline.Milestone
+              icon={<img src="baby-solid.svg" alt="baby" />}
+              milestone="Born"
+              date={new Date("***REMOVED***")}
+              connectorVisibile={false}
+            />
+          </Timeline>
+        </div>
       </main>
       <BackToTopRocket />
     </div>
