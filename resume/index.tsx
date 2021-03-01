@@ -1,4 +1,5 @@
 import { ReactNode } from "react";
+import { AwardIcon } from "./icons";
 import {
   AmanoMcGannLogo,
   BestBuyLogo,
@@ -286,8 +287,17 @@ export const resume: Resume = {
       logoBackgroundColor: "#c7242d",
       milestone: "Joined RBA",
       date: new Date("02/01/2011"),
-      // TODO
-      description: "",
+      description: (
+        <>
+          App Dev Consultant building custom enterprise software for{" "}
+          <span className="whitespace-nowrap">our clients.</span>
+          <p className="mt-2 ml-2 text-sm">
+            <AwardIcon className="inline-block mr-1.5 text-yellow-400" />
+            2012 President’s Club award winner (as one of the highest{" "}
+            <span className="whitespace-nowrap">billing consultants)</span>
+          </p>
+        </>
+      ),
     },
     {
       logo: GnReSoundLogo,
@@ -298,14 +308,25 @@ export const resume: Resume = {
       endDate: new Date("02/01/2011"),
       employer: "TEKsystems",
       type: "Contract",
-      // TODO
-      description: "",
+      description: (
+        <>
+          Supported five SharePoint sites and two ASP.NET{" "}
+          <span className="whitespace-nowrap">e-commerce solutions.</span>
+        </>
+      ),
       bullets: [
-        "Supported five SharePoint sites and two ASP.NET e-commerce solutions.",
-        "Built command line-based tools to automate everyday SharePoint operations.",
-        "Participated in a new SharePoint project using the MVP pattern for web parts and user controls.",
-        "Used the AJAX Control Toolkit to create rich web-based user controls for a better user experience.",
-        "Worked with Google Analytics and Google Maps API.",
+        <>
+          Built command-line tools to automate everyday{" "}
+          <span className="whitespace-nowrap">SharePoint operations</span>
+        </>,
+        <>
+          Helped out with greenfield development when support tickets didn’t{" "}
+          <span className="whitespace-nowrap">need attention</span>
+        </>,
+        <>
+          Worked extensively with Google Analytics and{" "}
+          <span className="whitespace-nowrap">Google Maps API</span>
+        </>,
       ],
       technologies: [
         "Google Analytics, Google Maps API, C#, ASP.NET, AJAX Control Toolkit, TFS, SharePoint",
@@ -325,13 +346,22 @@ export const resume: Resume = {
       startDate: new Date("04/01/2010"),
       endDate: new Date("09/01/2010"),
       type: "Internship",
-      // TODO
-      description: "",
+      description: (
+        <>
+          Worked alongside the Director of IT to deliver various programming
+          projects <span className="whitespace-nowrap">to production.</span>
+        </>
+      ),
       bullets: [
-        "Gained experience in the full software development life cycle.",
-        "Built a web application to manage voucher requests and distribute employee tickets.",
-        "Wrote dynamic crosstab SQL queries to provide external organizations access to our data.",
-        "Built a console application that requested XML data from an external API and then normalized it to populate a relational database.",
+        <>
+          Built a web application from scratch using ASP.NET and SQL Server to
+          manage voucher requests and distribute{" "}
+          <span className="whitespace-nowrap">employee tickets</span>
+        </>,
+        <>
+          Streamlined business processes by integrating systems using custom{" "}
+          <span className="whitespace-nowrap">cron jobs</span>
+        </>,
       ],
       technologies: ["JavaScript, HTML, CSS, C#, ASP.NET, LINQ, SQL Server"],
     },
@@ -346,12 +376,22 @@ export const resume: Resume = {
       description: (
         <>
           Hardware, software, and event support for SPAC and Minnesota Wild
-          employees and coaching staff. Go Wild!
+          employees and coaching staff.{" "}
+          <span className="whitespace-nowrap">Go Wild!</span>
         </>
       ),
       bullets: [
-        "Scripted a fully automated operating system and software installation process",
-        "Built a dynamic login script for file and printer mappings using Active Directory group filtering",
+        // TODO: what is the outcome?
+        <>
+          Scripted a fully automated operating system and software{" "}
+          <span className="whitespace-nowrap">installation process</span>
+        </>,
+        // TODO: what is the outcome?
+        <>
+          Built a dynamic login script for file and printer mappings using
+          Active Directory{" "}
+          <span className="whitespace-nowrap">group filtering</span>
+        </>,
       ],
       technologies: ["Altiris, batch scripting"],
     },
@@ -367,12 +407,19 @@ export const resume: Resume = {
       description: (
         <>
           Remotely guided several hardware and software rollouts to Target
-          stores around the United States.
+          stores around the{" "}
+          <span className="whitespace-nowrap">United States.</span>
         </>
       ),
       bullets: [
-        "Scripted repetitive tasks to prevent human error",
-        "Developed custom tools using C# to assist in fluid software rollouts",
+        <>
+          Scripted repetitive tasks to prevent{" "}
+          <span className="whitespace-nowrap">human error</span>
+        </>,
+        <>
+          Developed custom tools using C# to assist in fluid{" "}
+          <span className="whitespace-nowrap">software rollouts</span>
+        </>,
       ],
       technologies: ["C#, batch scripting"],
     },
@@ -385,14 +432,23 @@ export const resume: Resume = {
       type: "Owner",
       description: (
         <>
-          Started this company to help small businesses in the Anoka, MN area
-          connect with their customers over the web.
+          Started this company to help small businesses in Anoka, MN, connect
+          with customers on <span className="whitespace-nowrap">the web.</span>
         </>
       ),
       bullets: [
-        "Designed and developed an innovative website to market our services",
-        "Reorganized Postmatic's website for ease of use and introduced a web-based contact form",
-        "Designed and developed a professional and resourceful website for CPR Professionals",
+        <>
+          Designed and developed an innovative website to market{" "}
+          <span className="whitespace-nowrap">our services</span>
+        </>,
+        <>
+          Reorganized Postmatic's website for ease of use and introduced a
+          web-based <span className="whitespace-nowrap">contact form</span>
+        </>,
+        <>
+          Designed and developed a professional and resourceful website for{" "}
+          <span className="whitespace-nowrap">CPR Professionals</span>
+        </>,
       ],
       technologies: ["JavaScript, HTML, CSS, PHP"],
     },
@@ -410,7 +466,7 @@ export const resume: Resume = {
         <>
           Wrote my first computer program in BASIC to solve high school math
           problems on a <span className="whitespace-nowrap">TI-86</span>{" "}
-          graphing calculator.
+          <span className="whitespace-nowrap">graphing calculator.</span>
         </>
       ),
     },
@@ -427,7 +483,7 @@ export interface Job {
   employer: string;
   type: "Consultant" | "Contract" | "FTE" | "Internship" | "Owner";
   description: ReactNode;
-  bullets: string[];
+  bullets: ReactNode[];
   technologies: string[];
 }
 
