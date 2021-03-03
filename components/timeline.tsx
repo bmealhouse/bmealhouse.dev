@@ -25,10 +25,10 @@ Timeline.Job = ({
   description,
   bullets,
 }: Job) => {
-  const slug = `${(company || employer)
-    .replace(/[’\.]/g, "")
-    .replace(/\s/g, "-")
-    .toLowerCase()}-${startDate.getFullYear()}`;
+  // const slug = `${(company || employer)
+  //   .replace(/[’\.]/g, "")
+  //   .replace(/\s/g, "-")
+  //   .toLowerCase()}-${startDate.getFullYear()}`;
 
   const tenure = `${format(startDate, "MMM yyyy")} – ${
     endDate ? format(endDate, "MMM yyyy") : "present"
@@ -42,7 +42,7 @@ Timeline.Job = ({
   }
 
   return (
-    <li id={slug}>
+    <li>
       <div className="relative pb-8">
         <Connector />
         <div className="relative flex items-start space-x-3">
@@ -51,9 +51,9 @@ Timeline.Job = ({
           </LogoWrapper>
           <div className="min-w-0 flex-1">
             <div className="font-bold leading-tight">
-              <a className="anchor-link" href={`#${slug}`}>
-                {title}, {company ? company : employer}
-              </a>
+              {/* <a className="anchor-link" href={`#${slug}`}> */}
+              {title}, {company ? company : employer}
+              {/* </a> */}
             </div>
             <div className="text-sm text-gray-500">
               {tenure}&nbsp;/&nbsp;{employmentType}
@@ -84,23 +84,23 @@ Timeline.Milestone = ({
   date,
   connectorVisibile = true,
 }: Milestone) => {
-  let source = milestone;
+  // let source = milestone;
 
-  if (React.isValidElement(milestone)) {
-    source = React.Children.map(milestone.props.children, (value) =>
-      typeof value === "string" ? value : value.props.children
-    ).join();
-  }
+  // if (React.isValidElement(milestone)) {
+  //   source = React.Children.map(milestone.props.children, (value) =>
+  //     typeof value === "string" ? value : value.props.children
+  //   ).join();
+  // }
 
-  let slug = `${source
-    .toString()
-    .replace(/,/g, "")
-    .replace(/[\.\s]/g, "-")
-    .toLowerCase()}-${date.getFullYear()}`;
+  // let slug = `${source
+  //   .toString()
+  //   .replace(/,/g, "")
+  //   .replace(/[\.\s]/g, "-")
+  //   .toLowerCase()}-${date.getFullYear()}`;
 
   return (
     <>
-      <li id={slug}>
+      <li>
         <div className="relative pb-8">
           {connectorVisibile ? <Connector /> : null}
           <div className="relative flex items-start space-x-3">
@@ -113,10 +113,11 @@ Timeline.Milestone = ({
             ) : null}
             <div className={`min-w-0 flex-1 ${logo ? "py-2.5" : "py-1.5"}`}>
               <p
-                className="font-bold text-lg leading-tight anchor-link cursor-pointer"
-                onClick={() => {
-                  window.location.hash = slug;
-                }}
+                className="font-bold text-lg leading-tight"
+                // className="font-bold text-lg leading-tight anchor-link cursor-pointer"
+                // onClick={() => {
+                //   window.location.hash = slug;
+                // }}
               >
                 {milestone}
                 {date ? (
