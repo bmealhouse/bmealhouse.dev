@@ -31,7 +31,7 @@ export const BackToTopRocket = () => {
 
   return (
     <div
-      className={`fixed bottom-7 right-6 w-10 h-10 p-2 text-gray-800 bg-yellow-200 rounded-md transform -rotate-45 cursor-pointer ${transition}`}
+      className={`fixed bottom-7 right-6 w-10 h-10 p-2 text-gray-800 bg-yellow-200 hover:bg-yellow-300 rounded-md transform -rotate-45 cursor-pointer ${transition}`}
       onClick={() => {
         window.scrollTo({ top: 0, behavior: "smooth" });
       }}

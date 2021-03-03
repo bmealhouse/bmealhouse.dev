@@ -61,7 +61,7 @@ Timeline.Job = ({
             <div className="mt-1 font-light">
               <p>{description}</p>
               {bullets.length > 0 ? (
-                <ul className="mt-2 ml-7 list-disc text-sm text-gray-800">
+                <ul className="mt-2 ml-7 list-disc text-sm text-gray-800 dark:text-gray-300">
                   {bullets.map((text, index) => (
                     <li key={index}>{text}</li>
                   ))}

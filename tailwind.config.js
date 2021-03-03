@@ -13,6 +13,10 @@ module.exports = {
       xs: "460px",
       ...defaultTheme.screens,
     },
+    ringColor: (theme) => ({
+      DEFAULT: theme("colors.gray.500", "#71717a"),
+      ...theme("colors"),
+    }),
     extend: {
       colors: {
         gray: colors.gray,

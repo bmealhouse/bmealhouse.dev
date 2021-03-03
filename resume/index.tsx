@@ -68,8 +68,8 @@ export const resume: Resume = {
       date: new Date("08/01/2020"),
       description: (
         <>
-          Redesigned Fideldy Bros website to be mobile-friendly, fast,{" "}
-          <span className="whitespace-nowrap">and reliable.</span>
+          Redesigned Fideldy Bros Well Drilling website to be mobile-friendly,
+          fast, <span className="whitespace-nowrap">and reliable.</span>
         </>
       ),
     },
@@ -104,7 +104,7 @@ export const resume: Resume = {
         <>
           VS Code extension that shifts your color theme and font{" "}
           <span className="whitespace-nowrap">family automatically.</span>
-          <ul className="mt-2 ml-7 list-disc text-sm text-gray-800">
+          <ul className="mt-2 ml-7 list-disc text-sm  text-gray-800 dark:text-gray-300">
             <li>
               Favorite or ignore color themes and{" "}
               <span className="whitespace-nowrap">font families</span>
@@ -503,7 +503,7 @@ export const resume: Resume = {
         <>
           Worked directly with RBA clients building custom{" "}
           <span className="whitespace-nowrap">enterprise software.</span>
-          <p className="mt-2 ml-2 text-sm list-disc">
+          <p className="mt-2 ml-2 text-sm text-gray-800 dark:text-gray-300">
             <AwardIcon className="inline-block mr-1.5 text-yellow-400" />
             2012 President’s Club award winner (as one of the highest{" "}
             <span className="whitespace-nowrap">billing consultants)</span>
