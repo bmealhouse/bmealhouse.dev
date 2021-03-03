@@ -1,6 +1,5 @@
 import Head from "next/head";
-import { BackToTopRocket, Timeline } from "../components";
-import { DarkModeToggle } from "../components/dark-mode-toggle";
+import { BackToTopRocket, DarkModeToggle, Timeline } from "../components";
 import { resume, Job, Milestone } from "../resume";
 
 export default function Home() {
@@ -33,7 +32,8 @@ if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
         <div className="mr-6 flex justify-end items-center space-x-5">
           <a
             className="py-1 rounded focus:outline-none focus:ring-2 focus:ring-offset-2"
-            href="/bmealhouse.pdf"
+            href="/bmealhouse-resume-2021.pdf"
+            target="_blank"
           >
             <span className="sr-only">PDF resume</span>
             <svg
@@ -62,12 +62,40 @@ if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
             </a>
           </section>
           <div className="pr-8">
-            <section>
+            <section className="mt-12">
               {resume.summary.map((text, index) => (
-                <p key={index} className="mt-10">
+                <p key={index} className="mt-4">
                   {text}
                 </p>
               ))}
+            </section>
+            <section>
+              <h2 className="mt-12 text-4xl xs:text-5xl sm:text-6xl md:text-2xl font-extrabold uppercase">
+                Skills
+              </h2>
+              <div>
+                {[
+                  "JavaScript",
+                  "TypeScript",
+                  "React",
+                  "Next.js",
+                  "styled-components",
+                  "tailwindcss",
+                  "Jest",
+                  "React Testing Library",
+                  "Node.js",
+                  "GraphQL",
+                  "Babel",
+                  "Webpack",
+                  "Rollup",
+                  "XO",
+                  "CI/CD",
+                ].map((skill) => (
+                  <span className="mr-1 inline-flex items-center px-2 py-0.5 rounded text-xs font-medium bg-yellow-200 text-gray-800">
+                    {skill}
+                  </span>
+                ))}
+              </div>
             </section>
             <Timeline>
               {resume.timeline.map((event, index) => {
