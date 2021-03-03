@@ -17,6 +17,17 @@ export default function Home() {
           content="Independent consultant specializing in full-stack React and Node.js development"
         />
         <link rel="stylesheet" href="https://rsms.me/inter/inter.css" />
+        {/* <script
+          dangerouslySetInnerHTML={{
+            __html: `const element = document.querySelector("html");
+if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+  element.classList.add('dark');
+} else {
+  element.classList.remove('dark')
+}
+          `,
+          }}
+        /> */}
       </Head>
       <div className="max-w-2xl pl-3 tracking-tight">
         <div className="mr-6 flex justify-end items-center space-x-5">
