@@ -1,9 +1,7 @@
-import { ReactNode } from "react";
+import React, { ReactNode } from "react";
 import { format, formatDistanceToNow } from "date-fns";
 import { Job, Milestone } from "../resume";
 import { DefaultLogo } from "../resume/logos";
-
-const DEFAULT_CONNECTOR_COLOR = "bg-gray-300";
 
 interface Props {
   children: ReactNode;
@@ -27,6 +25,11 @@ Timeline.Job = ({
   description,
   bullets,
 }: Job) => {
+  const slug = `${(company || employer)
+    .replace(/[’\.]/g, "")
+    .replace(/\s/g, "-")
+    .toLowerCase()}-${startDate.getFullYear()}`;
+
   const tenure = `${format(startDate, "MMM yyyy")} – ${
     endDate ? format(endDate, "MMM yyyy") : "present"
   }`;
@@ -39,7 +42,7 @@ Timeline.Job = ({
   }
 
   return (
-    <li>
+    <li id={slug}>
       <div className="relative pb-8">
         <Connector />
         <div className="relative flex items-start space-x-3">
@@ -48,7 +51,9 @@ Timeline.Job = ({
           </LogoWrapper>
           <div className="min-w-0 flex-1">
             <div className="font-bold leading-tight">
-              {title}, {company ? company : employer}
+              <a className="anchor-link" href={`#${slug}`}>
+                {title}, {company ? company : employer}
+              </a>
             </div>
             <div className="text-sm text-gray-500">
               {tenure}&nbsp;/&nbsp;{employmentType}
@@ -78,37 +83,58 @@ Timeline.Milestone = ({
   description,
   date,
   connectorVisibile = true,
-}: Milestone) => (
-  <>
-    <li>
-      <div className="relative pb-8">
-        {connectorVisibile ? <Connector /> : null}
-        <div className="relative flex items-start space-x-3">
-          {logo ? (
-            <LogoWrapper backgroundColor={logoBackgroundColor}>
-              {logo}
-            </LogoWrapper>
-          ) : icon ? (
-            <IconWrapper>{icon}</IconWrapper>
-          ) : null}
-          <div className={`min-w-0 flex-1 ${logo ? "py-2.5" : "py-1.5"}`}>
-            <p className="font-bold text-lg leading-tight">
-              {milestone}
-              {date ? (
-                <span className="font-normal text-sm text-gray-500 dark:text-gray-600">
-                  &nbsp;/&nbsp;{formatDistanceToNow(date)} ago
-                </span>
-              ) : null}
-            </p>
-            {description ? (
-              <p className="mt-1 font-light">{description}</p>
+}: Milestone) => {
+  let source = milestone;
+
+  if (React.isValidElement(milestone)) {
+    source = React.Children.map(milestone.props.children, (value) =>
+      typeof value === "string" ? value : value.props.children
+    ).join();
+  }
+
+  let slug = `${source
+    .toString()
+    .replace(/,/g, "")
+    .replace(/[\.\s]/g, "-")
+    .toLowerCase()}-${date.getFullYear()}`;
+
+  return (
+    <>
+      <li id={slug}>
+        <div className="relative pb-8">
+          {connectorVisibile ? <Connector /> : null}
+          <div className="relative flex items-start space-x-3">
+            {logo ? (
+              <LogoWrapper backgroundColor={logoBackgroundColor}>
+                {logo}
+              </LogoWrapper>
+            ) : icon ? (
+              <IconWrapper>{icon}</IconWrapper>
             ) : null}
+            <div className={`min-w-0 flex-1 ${logo ? "py-2.5" : "py-1.5"}`}>
+              <p
+                className="font-bold text-lg leading-tight anchor-link cursor-pointer"
+                onClick={() => {
+                  window.location.hash = slug;
+                }}
+              >
+                {milestone}
+                {date ? (
+                  <span className="font-normal text-sm text-gray-500 dark:text-gray-600">
+                    &nbsp;/&nbsp;{formatDistanceToNow(date)} ago
+                  </span>
+                ) : null}
+              </p>
+              {description ? (
+                <div className="mt-1 font-light">{description}</div>
+              ) : null}
+            </div>
           </div>
         </div>
-      </div>
-    </li>
-  </>
-);
+      </li>
+    </>
+  );
+};
 
 function Connector() {
   return (

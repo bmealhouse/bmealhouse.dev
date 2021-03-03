@@ -222,7 +222,7 @@ export const resume: Resume = {
             target="_blank"
           >
             hillcitymnag.church
-          </a>{" "}
+          </a>
         </>
       ),
       date: new Date("12/10/2016"),
