@@ -121,7 +121,7 @@ Timeline.Milestone = ({
               >
                 {milestone}
                 {date ? (
-                  <span className="font-normal text-sm text-gray-500 dark:text-gray-600">
+                  <span className="font-normal text-sm text-gray-500">
                     &nbsp;/&nbsp;{formatDistanceToNow(date)} ago
                   </span>
                 ) : null}
@@ -140,7 +140,7 @@ Timeline.Milestone = ({
 function Connector() {
   return (
     <span
-      className="absolute top-5 left-5 -ml-px h-full w-0.5 bg-gray-300"
+      className="absolute top-5 left-5 -ml-px h-full w-0.5 bg-gray-300 dark:bg-gray-700"
       aria-hidden="true"
     />
   );
