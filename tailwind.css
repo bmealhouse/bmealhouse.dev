@@ -1,3 +1,17 @@
 @tailwind base;
 @tailwind components;
+
+.link {
+  @apply border-b-4 border-yellow-200 hover:border-yellow-300;
+}
+
+.anchor-link::after {
+  @apply text-gray-300 font-medium;
+  content: "";
+}
+
+.anchor-link:hover::after {
+  content: "  #";
+}
+
 @tailwind utilities;

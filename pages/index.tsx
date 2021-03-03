@@ -11,7 +11,10 @@ export default function Home() {
           rel="icon"
           href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>✨</text></svg>"
         />
-        <meta name="description" content="" />
+        <meta
+          name="description"
+          content="Independent consultant specializing in full-stack React and Node.js development"
+        />
         <link rel="stylesheet" href="https://rsms.me/inter/inter.css" />
       </Head>
       <main className="max-w-2xl pl-3 tracking-tight">
@@ -20,10 +23,7 @@ export default function Home() {
           <span className="block">{resume.lastName}</span>
         </h1>
         <section className="mt-0.5 md:mt-1.5 text-sm font-medium">
-          <a
-            className="border-b-4 border-yellow-200 hover:border-yellow-300"
-            href={`mailto:${resume.email}`}
-          >
+          <a className="link" href={`mailto:${resume.email}`}>
             {resume.email}
           </a>
         </section>
@@ -36,35 +36,19 @@ export default function Home() {
             ))}
           </section>
           <Timeline>
-            {resume.timeline.map((event) => {
+            {resume.timeline.map((event, index) => {
               const job = event as Job;
               if (job.employer) {
-                return (
-                  <Timeline.Job
-                    key={job.employer + job.title + job.company}
-                    {...job}
-                  />
-                );
+                return <Timeline.Job key={index} {...job} />;
               }
 
               const milestone = event as Milestone;
               if (milestone.milestone) {
-                return (
-                  <Timeline.Milestone
-                    key={milestone.milestone}
-                    {...milestone}
-                  />
-                );
+                return <Timeline.Milestone key={index} {...milestone} />;
               }
 
               return null;
             })}
-            <Timeline.Milestone
-              icon={<img src="baby-solid.svg" alt="baby" />}
-              milestone="Born"
-              date={new Date("***REMOVED***")}
-              connectorVisibile={false}
-            />
           </Timeline>
         </div>
       </main>
