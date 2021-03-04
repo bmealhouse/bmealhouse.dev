@@ -176,6 +176,11 @@ export const resume: Resume = {
       ],
     },
     {
+      icon: <img src="baby-carriage-duotone.svg" alt="baby carriage" />,
+      milestone: "Elsie Mae was born",
+      date: new Date("***REMOVED***"),
+    },
+    {
       logo: AmanoMcGannLogo,
       logoBackgroundColor: "#006ba6",
       title: "Lead JavaScript Developer",
@@ -232,6 +237,11 @@ export const resume: Resume = {
           <span className="whitespace-nowrap">and Prismic.</span>
         </>
       ),
+    },
+    {
+      icon: <img src="baby-carriage-duotone.svg" alt="baby carriage" />,
+      milestone: "Chloe Belle was born",
+      date: new Date("***REMOVED***"),
     },
     {
       logo: BestBuyLogo,
@@ -391,6 +401,41 @@ export const resume: Resume = {
       ],
     },
     {
+      icon: <img src="rings-wedding-duotone.svg" alt="wedding rings" />,
+      milestone: "Got married",
+      date: new Date("***REMOVED***"),
+    },
+    {
+      logo: TCheckLogo,
+      logoBackgroundColor: "#fff",
+      title: "Web Developer",
+      company: "T-Chek",
+      startDate: new Date("06/01/2012"),
+      endDate: new Date("12/01/2012"),
+      employer: "RBA",
+      type: "Consultant",
+      description: (
+        <>
+          Joined a large-scale, multi-team development effort empowering
+          companies to manage their fuel and general business spending in{" "}
+          <span className="whitespace-nowrap">different ways.</span>
+        </>
+      ),
+      bullets: [
+        <>
+          WCF service development using SOLID design patterns, LINQ, and Moq{" "}
+          <span className="whitespace-nowrap">unit testing</span>
+        </>,
+        <>
+          ASP.NET MVC 3 development using JavaScript, jQuery, and{" "}
+          <span className="whitespace-nowrap">Kendo UI</span>
+        </>,
+      ],
+      technologies: [
+        "JavaScript, jQuery, Kendo UI, HTML, CSS, C#, ASP.NET MVC, LINQ, WCF, Moq, NuGet, TFS",
+      ],
+    },
+    {
       logo: HbFullerLogo,
       logoBackgroundColor: "#14379f",
       title: "Web Developer",
@@ -427,36 +472,6 @@ export const resume: Resume = {
       ],
       technologies: [
         "JavaScript, HTML, CSS, C#, Entity Framework, LINQ, WCF, Moq, SQL Server, NuGet, TFS, PowerShell, SharePoint, InfoPath",
-      ],
-    },
-    {
-      logo: TCheckLogo,
-      logoBackgroundColor: "#fff",
-      title: "Web Developer",
-      company: "T-Chek",
-      startDate: new Date("06/01/2012"),
-      endDate: new Date("12/01/2012"),
-      employer: "RBA",
-      type: "Consultant",
-      description: (
-        <>
-          Joined a large-scale, multi-team development effort empowering
-          companies to manage their fuel and general business spending in{" "}
-          <span className="whitespace-nowrap">different ways.</span>
-        </>
-      ),
-      bullets: [
-        <>
-          WCF service development using SOLID design patterns, LINQ, and Moq{" "}
-          <span className="whitespace-nowrap">unit testing</span>
-        </>,
-        <>
-          ASP.NET MVC 3 development using JavaScript, jQuery, and{" "}
-          <span className="whitespace-nowrap">Kendo UI</span>
-        </>,
-      ],
-      technologies: [
-        "JavaScript, jQuery, Kendo UI, HTML, CSS, C#, ASP.NET MVC, LINQ, WCF, Moq, NuGet, TFS",
       ],
     },
     {
