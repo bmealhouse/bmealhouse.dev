@@ -79,9 +79,9 @@ export const resume: Resume = {
       date: new Date("06/22/2019"),
       description: (
         <>
-          We live in the home my wife grew up in, enjoying the northern MN fresh
-          air, lake view, and{" "}
-          <span className="whitespace-nowrap">starry nights.</span>
+          We live in the house my wife grew up in, enjoying the lake view,
+          starry nights, and fresh air of{" "}
+          <span className="whitespace-nowrap">northern Minnesota.</span>
         </>
       ),
     },
@@ -228,7 +228,7 @@ export const resume: Resume = {
       date: new Date("12/10/2016"),
       description: (
         <>
-          Blazing fast Jamstack site for the local church built with Gatsby{" "}
+          Blazing fast Jamstack site for a local church built with Gatsby{" "}
           <span className="whitespace-nowrap">and Prismic.</span>
         </>
       ),
