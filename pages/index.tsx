@@ -89,7 +89,7 @@ if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
               <h2 className="mt-12 text-4xl xs:text-5xl sm:text-6xl md:text-2xl font-extrabold uppercase">
                 Skills
               </h2>
-              <div>
+              <div className="mt-1">
                 {[
                   "JavaScript",
                   "TypeScript",

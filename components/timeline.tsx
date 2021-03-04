@@ -12,7 +12,7 @@ export const Timeline = ({ children }: Props) => (
     <h2 className="mt-12 text-4xl xs:text-5xl sm:text-6xl md:text-2xl font-extrabold uppercase">
       Timeline
     </h2>
-    <ul className="mt-6 -mb-8">{children}</ul>
+    <ul className="mt-4 -mb-8">{children}</ul>
   </div>
 );
 
