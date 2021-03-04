@@ -59,7 +59,7 @@ Timeline.Job = ({
               {/* </a> */}
             </div>
             <div className="text-sm text-gray-500">
-              {tenure}&nbsp;/&nbsp;{employmentType}
+              {tenure} /&nbsp;{employmentType}
             </div>
             <div className="mt-1 font-light">
               <p>{description}</p>
@@ -125,7 +125,8 @@ Timeline.Milestone = ({
                 {milestone}
                 {date ? (
                   <span className="font-normal text-sm text-gray-500">
-                    &nbsp;/&nbsp;{formatDistanceToNow(date)} ago
+                    {" "}
+                    /&nbsp;{formatDistanceToNow(date)} ago
                   </span>
                 ) : null}
               </p>

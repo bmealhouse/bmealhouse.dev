@@ -55,7 +55,7 @@ export const resume: Resume = {
       icon: <img src="browser-duotone.svg" alt="browser" />,
       milestone: (
         <>
-          Shipped{" "}
+          Launched{" "}
           <a
             className="link"
             href="https://fideldywelldrilling.com"
@@ -102,20 +102,20 @@ export const resume: Resume = {
       date: new Date("04/12/2019"),
       description: (
         <>
-          VS Code extension that shifts your color theme and font{" "}
-          <span className="whitespace-nowrap">family automatically.</span>
+          VS Code extension that shifts your color theme and{" "}
+          <span className="whitespace-nowrap">font automatically.</span>
           <ul className="mt-2 ml-7 list-disc text-sm  text-gray-800 dark:text-gray-300">
             <li>
-              Favorite or ignore color themes and{" "}
-              <span className="whitespace-nowrap">font families</span>
+              Favorite or ignore color themes{" "}
+              <span className="whitespace-nowrap">and fonts</span>
             </li>
             <li>
-              Shifts color theme and font family every{" "}
+              Shifts your color theme and font every{" "}
               <span className="whitespace-nowrap">30 minutes</span>
             </li>
             <li>
               Works across multiple VS code instances without conflict and
-              displays a timer in your{" "}
+              displays a timer in the{" "}
               <span className="whitespace-nowrap">status bar</span>
             </li>
           </ul>
@@ -129,7 +129,7 @@ export const resume: Resume = {
       company: "Securian",
       startDate: new Date("03/01/2018"),
       endDate: new Date("04/01/2021"),
-      employer: "QUBED",
+      employer: "Qubed",
       type: "Consultant",
       description: (
         <>
@@ -182,7 +182,7 @@ export const resume: Resume = {
       company: "Amano McGann",
       startDate: new Date("01/01/2017"),
       endDate: new Date("02/01/2018"),
-      employer: "QUBED",
+      employer: "Qubed",
       type: "Consultant",
       description: (
         <>
@@ -215,7 +215,7 @@ export const resume: Resume = {
       icon: <img src="browser-duotone.svg" alt="browser" />,
       milestone: (
         <>
-          Shipped{" "}
+          Launched{" "}
           <a
             className="link"
             href="https://hillcitymnag.church"
@@ -240,7 +240,7 @@ export const resume: Resume = {
       company: "Best Buy",
       startDate: new Date("12/01/2014"),
       endDate: new Date("11/01/2016"),
-      employer: "QUBED",
+      employer: "Qubed",
       type: "Consultant",
       description: (
         <>
@@ -281,7 +281,7 @@ export const resume: Resume = {
       company: "Imation",
       startDate: new Date("08/01/2014"),
       endDate: new Date("12/01/2014"),
-      employer: "QUBED",
+      employer: "Qubed",
       type: "Consultant",
       description: (
         <>
@@ -315,7 +315,7 @@ export const resume: Resume = {
       company: "General Mills",
       startDate: new Date("11/01/2013"),
       endDate: new Date("08/01/2014"),
-      employer: "QUBED",
+      employer: "Qubed",
       type: "Consultant",
       description: (
         <>
@@ -349,12 +349,12 @@ export const resume: Resume = {
     {
       logo: QubedLogo,
       logoBackgroundColor: "#27272a",
-      milestone: "Founded QUBED, INC.",
+      milestone: "Founded Qubed, Inc.",
       date: new Date("08/01/2013"),
       description: (
         <>
-          Started this company to ship high-quality JavaScript applications and
-          begin my quest for{" "}
+          Started this company to create high-quality JavaScript applications
+          and begin my quest for{" "}
           <span className="whitespace-nowrap">ultimate freedom.</span>
         </>
       ),
