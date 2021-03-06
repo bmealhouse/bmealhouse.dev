@@ -401,6 +401,45 @@ export const resume: Resume = {
       ],
     },
     {
+      logo: HbFullerLogo,
+      logoBackgroundColor: "#14379f",
+      title: "Web Developer",
+      company: "H.B. Fuller",
+      startDate: new Date("10/01/2011"),
+      endDate: new Date("09/01/2013"),
+      employer: "RBA",
+      type: "Consultant",
+      description: (
+        <>
+          Joined and eventually led new development efforts for Innovation
+          Portal – a project management tool for the{" "}
+          <span className="whitespace-nowrap">R&amp;D group.</span>
+        </>
+      ),
+      bullets: [
+        <>
+          Refactored existing business logic to improve developer productivity,
+          unit testing, code maintainability, and overall{" "}
+          <span className="whitespace-nowrap">system stability</span>
+        </>,
+        <>
+          Implemented Entity Framework to simplify data access patterns and
+          speed <span className="whitespace-nowrap">up queries</span>
+        </>,
+        <>
+          Configured TCP endpoints to increase{" "}
+          <span className="whitespace-nowrap">WCF service performance</span>
+        </>,
+        <>
+          Built extensive suite PowerShell scripts to automate deployments for{" "}
+          <span className="whitespace-nowrap">all environments</span>
+        </>,
+      ],
+      technologies: [
+        "JavaScript, HTML, CSS, C#, Entity Framework, LINQ, WCF, Moq, SQL Server, NuGet, TFS, PowerShell, SharePoint, InfoPath",
+      ],
+    },
+    {
       icon: <img src="rings-wedding-duotone.svg" alt="wedding rings" />,
       milestone: "Got married",
       date: new Date("***REMOVED***"),
@@ -433,45 +472,6 @@ export const resume: Resume = {
       ],
       technologies: [
         "JavaScript, jQuery, Kendo UI, HTML, CSS, C#, ASP.NET MVC, LINQ, WCF, Moq, NuGet, TFS",
-      ],
-    },
-    {
-      logo: HbFullerLogo,
-      logoBackgroundColor: "#14379f",
-      title: "Web Developer",
-      company: "H.B. Fuller",
-      startDate: new Date("10/01/2011"),
-      endDate: new Date("09/01/2013"),
-      employer: "RBA",
-      type: "Consultant",
-      description: (
-        <>
-          Joined and eventually led new development efforts for Innovation
-          Portal – a project management tool for{" "}
-          <span className="whitespace-nowrap">R&amp;D projects.</span>
-        </>
-      ),
-      bullets: [
-        <>
-          Refactored existing business logic to improve developer productivity,
-          unit testing, code maintainability, and overall{" "}
-          <span className="whitespace-nowrap">system stability</span>
-        </>,
-        <>
-          Implemented Entity Framework to simplify data access patterns and
-          speed <span className="whitespace-nowrap">up queries</span>
-        </>,
-        <>
-          Configured TCP endpoints to increase{" "}
-          <span className="whitespace-nowrap">WCF service performance</span>
-        </>,
-        <>
-          Built extensive suite PowerShell scripts to automate deployments for{" "}
-          <span className="whitespace-nowrap">all environments</span>
-        </>,
-      ],
-      technologies: [
-        "JavaScript, HTML, CSS, C#, Entity Framework, LINQ, WCF, Moq, SQL Server, NuGet, TFS, PowerShell, SharePoint, InfoPath",
       ],
     },
     {
