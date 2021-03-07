@@ -86,7 +86,7 @@ if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
               ))}
             </section>
             <section>
-              <h2 className="mt-12 text-4xl xs:text-5xl sm:text-6xl md:text-2xl font-extrabold uppercase">
+              <h2 className="mt-12 text-2xl font-extrabold uppercase">
                 Skills
               </h2>
               <div className="mt-1">
