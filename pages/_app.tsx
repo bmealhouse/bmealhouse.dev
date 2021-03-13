@@ -1,5 +1,5 @@
 import "../tailwind.css";
 
-export default function BMealhouseDev({ Component, pageProps }) {
+export default function BMealhouseApp({ Component, pageProps }) {
   return <Component {...pageProps} />;
 }

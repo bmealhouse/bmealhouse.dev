@@ -165,6 +165,7 @@ function LogoWrapper({ children, backgroundColor }: LogoWrapperProps) {
     </div>
   );
 }
+
 interface IconWrapperProps {
   children: ReactNode;
 }
