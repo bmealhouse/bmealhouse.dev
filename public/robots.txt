@@ -1,0 +1,2 @@
+User-agent: *
+Sitemap: https://bmealhouse.dev/sitemap.xml

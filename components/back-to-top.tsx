@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 
 let ticking = false;
 
-export const BackToTopRocket = () => {
+export const BackToTop = () => {
   const [scrollPosition, setScrollPosition] = useState(0);
 
   const handleScroll = () => {
