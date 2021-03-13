@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export const AmanoMcGannLogo = (
   <Image
-    src="/amanomcgann-logo.png"
+    src="/logos/amanomcgann.png"
     alt="Amano McGann"
     aria-hidden="true"
     layout="fixed"
@@ -127,7 +127,7 @@ export const GeneralMillsLogo = (
 
 export const ImationLogo = (
   <Image
-    src="/imation-logo.png"
+    src="/logos/imation.png"
     alt="Imation"
     aria-hidden="true"
     layout="fixed"
