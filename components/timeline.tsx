@@ -9,7 +9,7 @@ interface Props {
 
 export const Timeline = ({ children }: Props) => (
   <div className="flow-root">
-    <h2 className="mt-12 text-2xl font-extrabold uppercase">Timeline</h2>
+    <h2 className="mt-12 text-2xl font-extrabold uppercase">Experience</h2>
     <ul className="mt-4 -mb-8">{children}</ul>
   </div>
 );
