@@ -23,6 +23,7 @@ export default function Home() {
             className="py-1 rounded focus:outline-none focus:ring-2 focus:ring-offset-2"
             href="https://github.com/bmealhouse"
             target="_blank"
+            rel="noreferrer"
           >
             <span className="sr-only">GitHub</span>
             <svg
