@@ -1,16 +1,21 @@
 import { useEffect, useState } from "react";
 
 export const DarkModeToggle = () => {
-  const [isDark, setIsDark] = useState(false);
+  const [isDark, setIsDark] = useState<boolean>();
 
   useEffect(() => {
-    const element = document.querySelector("html");
-    if (isDark) {
-      element.classList.add("dark");
-    } else {
-      element.classList.remove("dark");
+    if (isDark !== undefined) {
+      if (isDark) {
+        document.querySelector("html").classList.add("dark");
+      } else {
+        document.querySelector("html").classList.remove("dark");
+      }
     }
-  });
+  }, [isDark]);
+
+  useEffect(() => {
+    setIsDark(document.querySelector("html").classList.contains("dark"));
+  }, []);
 
   return (
     <button
