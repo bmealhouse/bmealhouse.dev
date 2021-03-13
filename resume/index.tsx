@@ -21,9 +21,7 @@ import {
 interface Resume {
   firstName: string;
   lastName: string;
-  location: string;
   email: string;
-  phone: string;
   summary: ReactNode[];
   timeline: Event[];
 }
@@ -31,9 +29,7 @@ interface Resume {
 export const resume: Resume = {
   firstName: "Brent",
   lastName: "Mealhouse",
-  location: "***REMOVED***",
   email: "bmealhouse@gmail.com",
-  phone: "***REMOVED***",
   summary: [
     <>
       I’m an independent consultant specializing in full-stack JavaScript
@@ -178,11 +174,6 @@ export const resume: Resume = {
       ],
     },
     {
-      icon: <img src="baby-carriage-duotone.svg" alt="baby carriage" />,
-      milestone: "Elsie Mae was born",
-      date: new Date("***REMOVED***"),
-    },
-    {
       logo: AmanoMcGannLogo,
       logoBackgroundColor: "#006ba6",
       title: "Lead JavaScript Developer",
@@ -264,11 +255,6 @@ export const resume: Resume = {
           Prismic.
         </>
       ),
-    },
-    {
-      icon: <img src="baby-carriage-duotone.svg" alt="baby carriage" />,
-      milestone: "Chloe Belle was born",
-      date: new Date("***REMOVED***"),
     },
     {
       logo: BestBuyLogo,
@@ -516,11 +502,6 @@ export const resume: Resume = {
         "SharePoint",
         "InfoPath",
       ],
-    },
-    {
-      icon: <img src="rings-wedding-duotone.svg" alt="wedding rings" />,
-      milestone: "Got married",
-      date: new Date("***REMOVED***"),
     },
     {
       logo: TCheckLogo,
@@ -782,11 +763,6 @@ export const resume: Resume = {
           problems on a TI-86 graphing calculator.
         </>
       ),
-    },
-    {
-      icon: <img src="baby-duotone.svg" alt="baby" />,
-      milestone: "Born",
-      date: new Date("***REMOVED***"),
       connectorVisibile: false,
     },
   ],
