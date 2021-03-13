@@ -96,7 +96,10 @@ export default function Home() {
                   "XO",
                   "CI/CD",
                 ].map((skill) => (
-                  <span className="mr-1 inline-flex items-center px-2 py-0.5 rounded text-xs font-medium bg-yellow-200 text-gray-800">
+                  <span
+                    key={skill}
+                    className="mr-1 inline-flex items-center px-2 py-0.5 rounded text-xs font-medium bg-yellow-200 text-gray-800"
+                  >
                     {skill}
                   </span>
                 ))}

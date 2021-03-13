@@ -36,18 +36,14 @@ export const resume: Resume = {
   phone: "***REMOVED***",
   summary: [
     <>
-      I’m an independent consultant specializing in{" "}
-      <span className="whitespace-nowrap">full-stack</span> JavaScript
-      development. <span className="whitespace-nowrap">I am</span> passionate
-      about web technologies, open-source, continuous delivery, code quality,
-      and automation. <span className="whitespace-nowrap">I am</span> committed
-      to delivering value to my customers and leading teams{" "}
-      <span className="whitespace-nowrap">to success.</span>
+      I’m an independent consultant specializing in full-stack JavaScript
+      development. I am passionate about web technologies, open-source,
+      continuous delivery, code quality, and automation. I am committed to
+      delivering value to my customers and leading teams to success.
     </>,
     <>
       I am currently interested in cloud-based React and Node.js projects using
-      serverless architecture. Let me know how I{" "}
-      <span className="whitespace-nowrap">can help.</span>
+      serverless architecture. Let me know how I can help.
     </>,
   ],
   timeline: [
@@ -69,7 +65,7 @@ export const resume: Resume = {
       description: (
         <>
           Redesigned Fideldy Bros Well Drilling website to be mobile-friendly,
-          fast, <span className="whitespace-nowrap">and reliable.</span>
+          fast, and reliable.
         </>
       ),
     },
@@ -80,8 +76,7 @@ export const resume: Resume = {
       description: (
         <>
           We live in the house my wife grew up in, enjoying the lake view,
-          starry nights, and fresh air of{" "}
-          <span className="whitespace-nowrap">northern Minnesota.</span>
+          starry nights, and fresh air of northern Minnesota.
         </>
       ),
     },
@@ -102,21 +97,13 @@ export const resume: Resume = {
       date: new Date("04/12/2019"),
       description: (
         <>
-          VS Code extension that shifts your color theme and{" "}
-          <span className="whitespace-nowrap">font automatically.</span>
+          VS Code extension that shifts your color theme and font automatically.
           <ul className="mt-2 ml-7 list-disc text-sm  text-gray-800 dark:text-gray-300">
-            <li>
-              Favorite or ignore color themes{" "}
-              <span className="whitespace-nowrap">and fonts</span>
-            </li>
-            <li>
-              Shifts your color theme and font every{" "}
-              <span className="whitespace-nowrap">30 minutes</span>
-            </li>
+            <li>Favorite or ignore color themes and fonts</li>
+            <li>Shifts your color theme and font every 30 minutes</li>
             <li>
               Works across multiple VS code instances without conflict and
-              displays a timer in the{" "}
-              <span className="whitespace-nowrap">status bar</span>
+              displays a timer in the status bar
             </li>
           </ul>
         </>
@@ -129,50 +116,65 @@ export const resume: Resume = {
       company: "Securian",
       startDate: new Date("03/01/2018"),
       endDate: new Date("04/01/2021"),
-      employer: "Qubed",
+      employer: "Independent",
       type: "Consultant",
       description: (
         <>
           Mentored a small team of talented developers, building Benefit Scout –
-          an educational tool that has grown to support{" "}
-          <span className="whitespace-nowrap">1.7M users</span> and has directly
-          contributed to <span className="whitespace-nowrap">$5 million</span>{" "}
-          of Securian’s annual{" "}
-          <span className="whitespace-nowrap">enrollment revenue.</span>
+          an educational tool that has grown to support 1.7M users and has
+          directly contributed to $5 million of Securian’s annual enrollment
+          revenue.
         </>
       ),
       bullets: [
         <>
           Led full-stack development across several repositories using React
-          Query, TypeScript, Node.js, Serverless, DynamoDB,{" "}
-          <span className="whitespace-nowrap">and ElastiCache</span>
+          Query, TypeScript, Node.js, Serverless, DynamoDB, and ElastiCache
         </>,
         <>
           Regularly contributed to Securian’s design system built with React,
-          styled-components,{" "}
-          <span className="whitespace-nowrap">and Storybook</span>
+          styled-components, and Storybook
         </>,
         <>
           Deployed as often as possible through CI/CD using feature flags to
-          keep our master{" "}
-          <span className="whitespace-nowrap">branches deployable</span>
+          keep our master branches deployable
         </>,
         <>
           Created a powerful integration test suite on top of Jest and React
-          Testing Library with automatic mocking and{" "}
-          <span className="whitespace-nowrap">client emulation</span>
+          Testing Library with automatic mocking and client emulation
         </>,
         <>
-          Supported and enhanced our chatbot, Scout, using Amazon Lex and{" "}
-          <span className="whitespace-nowrap">Amazon SageMaker</span>
+          Supported and enhanced our chatbot, Scout, using Amazon Lex and Amazon
+          SageMaker
         </>,
         <>
-          Usually, pair programmed or mobbed on stories when it{" "}
-          <span className="whitespace-nowrap">provided value</span>
+          Usually, pair programmed or mobbed on stories when it provided value
         </>,
       ],
       technologies: [
-        "JavaScript, Babel, React, Redux, Rematch, styled-components, HTML, CSS, Node.js, Next.js, Jest, React Testing Library, Webpack, Rollup, XO, Prettier, Yarn, GitHub, Serverless, AWS, DynamoDB, CloudFront, CloudFormation",
+        "JavaScript",
+        "Babel",
+        "React",
+        "Redux",
+        "Rematch",
+        "styled-components",
+        "HTML",
+        "CSS",
+        "Node.js",
+        "Next.js",
+        "Jest",
+        "React Testing Library",
+        "Webpack",
+        "Rollup",
+        "XO",
+        "Prettier",
+        "Yarn",
+        "GitHub",
+        "Serverless",
+        "AWS",
+        "DynamoDB",
+        "CloudFront",
+        "CloudFormation",
       ],
     },
     {
@@ -187,33 +189,58 @@ export const resume: Resume = {
       company: "Amano McGann",
       startDate: new Date("01/01/2017"),
       endDate: new Date("02/01/2018"),
-      employer: "Qubed",
+      employer: "Independent",
       type: "Consultant",
       description: (
         <>
           Architecture for Amano McGann’s future frontend platform and design
-          system built on top of Next.js and{" "}
-          <span className="whitespace-nowrap">styled-components.</span>
+          system built on top of Next.js and styled-components.
         </>
       ),
       bullets: [
         <>
           Developed a simple GraphQL proof of concept to aggregate data from
-          REST services, a MongoDB data store, and client storage (in-
-          <span className="whitespace-nowrap">memory cache)</span>
+          REST services, a MongoDB data store, and client storage (in- memory
+          cache)
         </>,
         <>
           Built an interactive visualization using React, Redux, and SVG to help
-          customers understand how to configure their{" "}
-          <span className="whitespace-nowrap">parking rates</span>
+          customers understand how to configure their parking rates
         </>,
         <>
           Used Yarn workspaces to create small internal packages for reuse{" "}
-          <span className="whitespace-nowrap">between projects</span>
+          between projects
         </>,
       ],
       technologies: [
-        "JavaScript, Babel, React, Redux, Redux Thunk, Redux-Saga, Reselect, Immutable, styled-components, HTML, CSS, Node.js, Express, Next.js, React-docgen, Jest, Enzyme, Webpack, Rollup, Parcel, @std/esm, XO, Prettier, Yarn, Docker, VSTS Git, VSTS CI/CD, Azure",
+        "JavaScript",
+        "Babel",
+        "React",
+        "Redux",
+        "Redux Thunk",
+        "Redux-Saga",
+        "Reselect",
+        "Immutable",
+        "styled-components",
+        "HTML",
+        "CSS",
+        "Node.js",
+        "Express",
+        "Next.js",
+        "React-docgen",
+        "Jest",
+        "Enzyme",
+        "Webpack",
+        "Rollup",
+        "Parcel",
+        "@std/esm",
+        "XO",
+        "Prettier",
+        "Yarn",
+        "Docker",
+        "VSTS Git",
+        "VSTS CI/CD",
+        "Azure",
       ],
     },
     {
@@ -233,8 +260,8 @@ export const resume: Resume = {
       date: new Date("12/10/2016"),
       description: (
         <>
-          Blazing fast Jamstack site for a local church built with Gatsby{" "}
-          <span className="whitespace-nowrap">and Prismic.</span>
+          Blazing fast Jamstack site for a local church built with Gatsby and
+          Prismic.
         </>
       ),
     },
@@ -250,38 +277,56 @@ export const resume: Resume = {
       company: "Best Buy",
       startDate: new Date("12/01/2014"),
       endDate: new Date("11/01/2016"),
-      employer: "Qubed",
+      employer: "Independent",
       type: "Consultant",
       description: (
         <>
           Developed A/B tests across bestbuy.com to determine what features
-          provide the best user experience and increase the overall{" "}
-          <span className="whitespace-nowrap">site conversion.</span>
+          provide the best user experience and increase the overall site
+          conversion.
         </>
       ),
       bullets: [
         <>
           Transformed legacy A/B testing code into a maintainable architecture
-          using Babel, Webpack, Node.js,{" "}
-          <span className="whitespace-nowrap">and Karma</span>
+          using Babel, Webpack, Node.js, and Karma
         </>,
         <>
           Moved the A/B testing team to Best Buy’s standard release management
           process, which reduced risk and provided more visibility for artifacts
-          deployed <span className="whitespace-nowrap">to production</span>
+          deployed to production
         </>,
         <>
           Optimized development workflow for fast feedback and increased{" "}
-          <span className="whitespace-nowrap">developer productivity</span>
+          developer productivity
         </>,
         <>
           Consistently evaluated dependency upgrades to ensure our team could
-          leverage the latest features and prevent our stack from{" "}
-          <span className="whitespace-nowrap">becoming stale</span>
+          leverage the latest features and prevent our stack from becoming stale
         </>,
       ],
       technologies: [
-        "JavaScript, Babel, Backbone.js, Dust.js, Bluebird, jQuery, HTML, LESS, Node.js, Express, gulp, Grunt, Karma, Mocha, Chai, Sinon, Webpack, JavaScript Standard Style, npm, Git, OpenStack",
+        "JavaScript",
+        "Babel",
+        "Backbone.js",
+        "Dust.js",
+        "Bluebird",
+        "jQuery",
+        "HTML",
+        "LESS",
+        "Node.js",
+        "Express",
+        "gulp",
+        "Grunt",
+        "Karma",
+        "Mocha",
+        "Chai",
+        "Sinon",
+        "Webpack",
+        "JavaScript Standard Style",
+        "npm",
+        "Git",
+        "OpenStack",
       ],
     },
     {
@@ -291,31 +336,45 @@ export const resume: Resume = {
       company: "Imation",
       startDate: new Date("08/01/2014"),
       endDate: new Date("12/01/2014"),
-      employer: "Qubed",
+      employer: "Independent",
       type: "Consultant",
       description: (
         <>
           Built a lightweight JavaScript architecture around Eloqua’s email
           marketing system with support for automatic form population and{" "}
-          <span className="whitespace-nowrap">progressing profiling.</span>
+          progressing profiling.
         </>
       ),
       bullets: [
         <>
-          Worked with Lodash, Jasmine, Greensock, WOW.js, CSS animations,{" "}
-          <span className="whitespace-nowrap">and Foundation</span>
+          Worked with Lodash, Jasmine, Greensock, WOW.js, CSS animations, and
+          Foundation
         </>,
         <>
           Helped the imation.com redesign project release on-time by assisting
-          with <span className="whitespace-nowrap">EPiServer development</span>
+          with EPiServer development
         </>,
         <>
           Implemented internally hosted WebAPI OData feed to load news articles
-          on <span className="whitespace-nowrap">imation.com dynamically</span>
+          on imation.com dynamically
         </>,
       ],
       technologies: [
-        "JavaScript, Lodash, Greensock, WOW.js, Foundation, HTML, CSS, Node.js, gulp, Jasmine, C#, ASP.NET Web API OData, Git, Jenkins, Eloqua",
+        "JavaScript",
+        "Lodash",
+        "Greensock",
+        "WOW.js",
+        "Foundation",
+        "HTML",
+        "CSS",
+        "Node.js",
+        "gulp",
+        "Jasmine",
+        "C#",
+        "ASP.NET Web API OData",
+        "Git",
+        "Jenkins",
+        "Eloqua",
       ],
     },
     {
@@ -325,35 +384,42 @@ export const resume: Resume = {
       company: "General Mills",
       startDate: new Date("11/01/2013"),
       endDate: new Date("08/01/2014"),
-      employer: "Qubed",
+      employer: "Independent",
       type: "Consultant",
       description: (
         <>
           Contributed to General Mills’ shared component library used by
-          bettycrocker.com, pillsbury.com, tablespoon.com,{" "}
-          <span className="whitespace-nowrap">and more.</span>
+          bettycrocker.com, pillsbury.com, tablespoon.com, and more.
         </>
       ),
       bullets: [
         <>
           Enhanced frontend components using Knockout, Jasmine, and Sitecore for{" "}
-          <span className="whitespace-nowrap">multilingual content</span>
+          multilingual content
         </>,
         <>
           Practiced agile scrum methodologies using TFS Application Lifecycle{" "}
-          <span className="whitespace-nowrap">Management (ALM) tools</span>
+          Management (ALM) tools
         </>,
         <>
-          Collaborated with a UX Planner to rewrite a mobile-friendly{" "}
-          <span className="whitespace-nowrap">coupons experience</span>
+          Collaborated with a UX Planner to rewrite a mobile-friendly coupons
+          experience
         </>,
-        <>
-          Performed daily deployments for US Factory teams as a{" "}
-          <span className="whitespace-nowrap">build master</span>
-        </>,
+        <>Performed daily deployments for US Factory teams as a build master</>,
       ],
       technologies: [
-        "JavaScript, Knockout, HTML, LESS, Node.js, gulp, Jasmine, C#, Moq, NuGet, TFS, Sitecore",
+        "JavaScript",
+        "Knockout",
+        "HTML",
+        "LESS",
+        "Node.js",
+        "gulp",
+        "Jasmine",
+        "C#",
+        "Moq",
+        "NuGet",
+        "TFS",
+        "Sitecore",
       ],
     },
     {
@@ -364,8 +430,7 @@ export const resume: Resume = {
       description: (
         <>
           Started this company to create high-quality JavaScript applications
-          and begin my quest for{" "}
-          <span className="whitespace-nowrap">ultimate freedom.</span>
+          and begin my quest for ultimate freedom.
         </>
       ),
     },
@@ -381,23 +446,28 @@ export const resume: Resume = {
       description: (
         <>
           Worked with a small, internal RBA team doing initial design and
-          development for a dynamic{" "}
-          <span className="whitespace-nowrap">form builder/viewer.</span>
+          development for a dynamic form builder/viewer.
         </>
       ),
       bullets: [
         <>
-          Used Knockout on the frontend to render an interactive form{" "}
-          <span className="whitespace-nowrap">building experience</span>
+          Used Knockout on the frontend to render an interactive form building
+          experience
         </>,
         <>
           Designed a dynamic validation system in MVC 4 using custom server-side
-          data annotations, client-side validation, and{" "}
-          <span className="whitespace-nowrap">code reuse</span>
+          data annotations, client-side validation, and code reuse
         </>,
       ],
       technologies: [
-        "JavaScript, Knockout, HTML, CSS, C#, ASP.NET MVC, ASP.NET Web API, TFS",
+        "JavaScript",
+        "Knockout",
+        "HTML",
+        "CSS",
+        "C#",
+        "ASP.NET MVC",
+        "ASP.NET Web API",
+        "TFS",
       ],
     },
     {
@@ -412,31 +482,39 @@ export const resume: Resume = {
       description: (
         <>
           Joined and eventually led new development efforts for Innovation
-          Portal – a project management tool for the{" "}
-          <span className="whitespace-nowrap">R&amp;D group.</span>
+          Portal – a project management tool for the R&amp;D group.
         </>
       ),
       bullets: [
         <>
           Refactored existing business logic to improve developer productivity,
-          unit testing, code maintainability, and overall{" "}
-          <span className="whitespace-nowrap">system stability</span>
+          unit testing, code maintainability, and overall system stability
         </>,
         <>
           Implemented Entity Framework to simplify data access patterns and
-          speed <span className="whitespace-nowrap">up queries</span>
+          speed up queries
         </>,
-        <>
-          Configured TCP endpoints to increase{" "}
-          <span className="whitespace-nowrap">WCF service performance</span>
-        </>,
+        <>Configured TCP endpoints to increase WCF service performance</>,
         <>
           Built extensive suite PowerShell scripts to automate deployments for{" "}
-          <span className="whitespace-nowrap">all environments</span>
+          all environments
         </>,
       ],
       technologies: [
-        "JavaScript, HTML, CSS, C#, Entity Framework, LINQ, WCF, Moq, SQL Server, NuGet, TFS, PowerShell, SharePoint, InfoPath",
+        "JavaScript",
+        "HTML",
+        "CSS",
+        "C#",
+        "Entity Framework",
+        "LINQ",
+        "WCF",
+        "Moq",
+        "SQL Server",
+        "NuGet",
+        "TFS",
+        "PowerShell",
+        "SharePoint",
+        "InfoPath",
       ],
     },
     {
@@ -457,21 +535,29 @@ export const resume: Resume = {
         <>
           Joined a large-scale, multi-team development effort empowering
           companies to manage their fuel and general business spending in{" "}
-          <span className="whitespace-nowrap">different ways.</span>
+          different ways.
         </>
       ),
       bullets: [
         <>
           WCF service development using SOLID design patterns, LINQ, and Moq{" "}
-          <span className="whitespace-nowrap">unit testing</span>
+          unit testing
         </>,
-        <>
-          ASP.NET MVC 3 development using JavaScript, jQuery, and{" "}
-          <span className="whitespace-nowrap">Kendo UI</span>
-        </>,
+        <>ASP.NET MVC 3 development using JavaScript, jQuery, and Kendo UI</>,
       ],
       technologies: [
-        "JavaScript, jQuery, Kendo UI, HTML, CSS, C#, ASP.NET MVC, LINQ, WCF, Moq, NuGet, TFS",
+        "JavaScript",
+        "jQuery",
+        "Kendo UI",
+        "HTML",
+        "CSS",
+        "C#",
+        "ASP.NET MVC",
+        "LINQ",
+        "WCF",
+        "Moq",
+        "NuGet",
+        "TFS",
       ],
     },
     {
@@ -486,27 +572,31 @@ export const resume: Resume = {
       description: (
         <>
           Worked with multiple dev teams to enhance existing web applications
-          and migrate to more{" "}
-          <span className="whitespace-nowrap">modern technologies.</span>
+          and migrate to more modern technologies.
         </>
       ),
       bullets: [
         <>
           New feature development and internal API improvements for a heavily
-          used <span className="whitespace-nowrap">KPI dashboard</span>
+          used KPI dashboard
         </>,
         <>
           Finished the remaining dev work, UAT and production deploy for a
-          jQuery and Entity{" "}
-          <span className="whitespace-nowrap">Framework project</span>
+          jQuery and Entity Framework project
         </>,
-        <>
-          Migrated a classic ASP solution to an MVP-based{" "}
-          <span className="whitespace-nowrap">ASP.NET website</span>
-        </>,
+        <>Migrated a classic ASP solution to an MVP-based ASP.NET website</>,
       ],
       technologies: [
-        "JavaScript, jQuery, HTML, CSS, C#, Entity Framework, ASP.NET, SQL Server, OpenXML, TFS",
+        "JavaScript",
+        "jQuery",
+        "HTML",
+        "CSS",
+        "C#",
+        "Entity Framework",
+        "ASP.NET",
+        "SQL Server",
+        "OpenXML",
+        "TFS",
       ],
     },
     {
@@ -516,12 +606,11 @@ export const resume: Resume = {
       date: new Date("02/01/2011"),
       description: (
         <>
-          Worked directly with RBA clients building custom{" "}
-          <span className="whitespace-nowrap">enterprise software.</span>
+          Worked directly with RBA clients building custom enterprise software.
           <p className="mt-2 ml-2 text-sm text-gray-800 dark:text-gray-300">
             <AwardIcon className="inline-block mr-1.5 text-yellow-400" />
-            2012 President’s Club award winner (as one of the highest{" "}
-            <span className="whitespace-nowrap">billing consultants)</span>
+            2012 President’s Club award winner (as one of the highest billing
+            consultants)
           </p>
         </>
       ),
@@ -537,26 +626,27 @@ export const resume: Resume = {
       type: "Contract",
       description: (
         <>
-          Supported five SharePoint sites and two ASP.NET{" "}
-          <span className="whitespace-nowrap">e-commerce solutions.</span>
+          Supported five SharePoint sites and two ASP.NET e-commerce solutions.
         </>
       ),
       bullets: [
         <>
-          Built command-line tools to automate everyday{" "}
-          <span className="whitespace-nowrap">SharePoint operations</span>
+          Built command-line tools to automate everyday SharePoint operations
         </>,
         <>
           Helped out with greenfield development when support tickets didn’t{" "}
-          <span className="whitespace-nowrap">need attention</span>
+          need attention
         </>,
-        <>
-          Worked extensively with Google Analytics and{" "}
-          <span className="whitespace-nowrap">Google Maps API</span>
-        </>,
+        <>Worked extensively with Google Analytics and Google Maps API</>,
       ],
       technologies: [
-        "Google Analytics, Google Maps API, C#, ASP.NET, AJAX Control Toolkit, TFS, SharePoint",
+        "Google Analytics",
+        "Google Maps API",
+        "C#",
+        "ASP.NET",
+        "AJAX Control Toolkit",
+        "TFS",
+        "SharePoint",
       ],
     },
     {
@@ -576,21 +666,28 @@ export const resume: Resume = {
       description: (
         <>
           Worked alongside the Director of IT to design and develop various{" "}
-          <span className="whitespace-nowrap">programming projects.</span>
+          programming projects.
         </>
       ),
       bullets: [
         <>
           Built a web application from scratch using ASP.NET and SQL Server to
-          manage voucher requests and distribute{" "}
-          <span className="whitespace-nowrap">employee tickets</span>
+          manage voucher requests and distribute employee tickets
         </>,
         <>
           Streamlined business processes by integrating systems using custom{" "}
-          <span className="whitespace-nowrap">cron jobs</span>
+          cron jobs
         </>,
       ],
-      technologies: ["JavaScript, HTML, CSS, C#, ASP.NET, LINQ, SQL Server"],
+      technologies: [
+        "JavaScript",
+        "HTML",
+        "CSS",
+        "C#",
+        "ASP.NET",
+        "LINQ",
+        "SQL Server",
+      ],
     },
     {
       logo: MnWildLogo,
@@ -603,22 +700,20 @@ export const resume: Resume = {
       description: (
         <>
           Hardware, software, and event support for SPAC and Minnesota Wild
-          employees and coaching staff.{" "}
-          <span className="whitespace-nowrap">Go Wild!</span>
+          employees and coaching staff. Go Wild!
         </>
       ),
       bullets: [
         <>
-          Scripted a fully automated operating system and software{" "}
-          <span className="whitespace-nowrap">installation process</span>
+          Scripted a fully automated operating system and software installation
+          process
         </>,
         <>
           Built a dynamic login script for file and printer mappings using
-          Active Directory{" "}
-          <span className="whitespace-nowrap">group filtering</span>
+          Active Directory group filtering
         </>,
       ],
-      technologies: ["Altiris, batch scripting"],
+      technologies: ["Altiris", "batch scripting"],
     },
     {
       logo: TargetLogo,
@@ -632,21 +727,16 @@ export const resume: Resume = {
       description: (
         <>
           Remotely guided several hardware and software rollouts to Target
-          stores around the{" "}
-          <span className="whitespace-nowrap">United States.</span>
+          stores around the United States.
         </>
       ),
       bullets: [
+        <>Scripted repetitive tasks to prevent human error</>,
         <>
-          Scripted repetitive tasks to prevent{" "}
-          <span className="whitespace-nowrap">human error</span>
-        </>,
-        <>
-          Developed custom tools using C# to assist in fluid{" "}
-          <span className="whitespace-nowrap">software rollouts</span>
+          Developed custom tools using C# to assist in fluid software rollouts
         </>,
       ],
-      technologies: ["C#, batch scripting"],
+      technologies: ["C#", "batch scripting"],
     },
     {
       logo: DefaultLogo,
@@ -658,24 +748,23 @@ export const resume: Resume = {
       description: (
         <>
           Started this company to help small businesses in Anoka, MN, connect
-          with customers on <span className="whitespace-nowrap">the web.</span>
+          with customers on the web.
         </>
       ),
       bullets: [
         <>
-          Designed and developed an innovative website to market{" "}
-          <span className="whitespace-nowrap">our services</span>
+          Designed and developed an innovative website to market our services
         </>,
         <>
           Reorganized Postmatic's website for ease of use and introduced a
-          web-based <span className="whitespace-nowrap">contact form</span>
+          web-based contact form
         </>,
         <>
-          Designed and developed a professional and resourceful website for{" "}
-          <span className="whitespace-nowrap">CPR Professionals</span>
+          Designed and developed a professional and resourceful website for CPR
+          Professionals
         </>,
       ],
-      technologies: ["JavaScript, HTML, CSS, PHP"],
+      technologies: ["JavaScript", "HTML", "CSS", "PHP"],
     },
     {
       icon: <img src="diploma-duotone.svg" alt="diploma" />,
@@ -690,8 +779,7 @@ export const resume: Resume = {
       description: (
         <>
           Wrote my first computer program in BASIC to solve high school math
-          problems on a <span className="whitespace-nowrap">TI-86</span>{" "}
-          <span className="whitespace-nowrap">graphing calculator.</span>
+          problems on a TI-86 graphing calculator.
         </>
       ),
     },
