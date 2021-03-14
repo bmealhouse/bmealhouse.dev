@@ -12,11 +12,7 @@ export default class BMealhouseDocument extends Document {
             type="font/woff2"
             crossOrigin="anonymous"
           />
-          <link
-            rel="icon"
-            href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>✨</text></svg>"
-          />
-          {/* <link href="/favicon.ico" rel="shortcut icon" />
+          <link href="/favicon.ico" rel="shortcut icon" />
           <link href="/site.webmanifest" rel="manifest" />
           <link
             href="/apple-touch-icon.png"
@@ -35,17 +31,10 @@ export default class BMealhouseDocument extends Document {
             sizes="16x16"
             type="image/png"
           />
-          <link
-            color="#4a9885"
-            href="/safari-pinned-tab.svg"
-            rel="mask-icon"
-          />
+          <link color="#fde68a" href="/safari-pinned-tab.svg" rel="mask-icon" />
           <meta content="#ffffff" name="theme-color" />
           <meta content="#ffffff" name="msapplication-TileColor" />
-          <meta
-            content="/browserconfig.xml"
-            name="msapplication-config"
-          /> */}
+          <meta content="/browserconfig.xml" name="msapplication-config" />
           <meta name="yandex-verification" content="63880aaa5b420964" />
           <meta
             name="google-site-verification"
