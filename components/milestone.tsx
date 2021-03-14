@@ -32,7 +32,8 @@ export const Milestone = ({
             </h3>
             <span className="font-normal text-sm text-gray-500">
               {" "}
-              /&nbsp;{formatDistanceToNow(date)} ago
+              <span aria-hidden="true">/</span>&nbsp;
+              {formatDistanceToNow(date)} ago
             </span>
             <p className="mt-1 font-light">{description}</p>
           </div>

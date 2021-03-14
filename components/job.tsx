@@ -42,7 +42,8 @@ export const Job = ({
               {title}, {company ? company : employer}
             </h3>
             <div className="text-sm text-gray-500">
-              {tenure} /&nbsp;{employmentTypeText}
+              {tenure} <span aria-hidden="true">/</span>&nbsp;
+              {employmentTypeText}
             </div>
             <div className="mt-1 font-light">
               <p>{description}</p>
