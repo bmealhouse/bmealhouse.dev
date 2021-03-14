@@ -4,8 +4,9 @@ const defaultTheme = require("tailwindcss/defaultTheme");
 module.exports = {
   purge: [
     "./components/**/*.{ts,tsx}",
+    "./lib/**/*.{ts,tsx}",
+    "./logos/**/*.{ts,tsx}",
     "./pages/**/*.{ts,tsx}",
-    "./resume/**/*.{ts,tsx}",
   ],
   darkMode: "class",
   theme: {

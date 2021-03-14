@@ -1,20 +1,21 @@
 import { Layout } from "@/components/layout";
-import { Timeline } from "@/components/timeline";
-import { resume, Job, Milestone } from "../resume";
+import { Job } from "@/components/job";
+import { Milestone } from "@/components/milestone";
+import { resume } from "@/lib/resume";
 
 export default function Home() {
   return (
     <Layout>
-      <h1 className="text-5xl xs:text-6xl sm:text-7xl md:text-8xl -ml-0.5 sm:-ml-1 font-bold uppercase">
+      <h1 className="-ml-0.5 sm:-ml-1 font-bold uppercase text-5xl xs:text-6xl sm:text-7xl md:text-8xl">
         {resume.firstName}
         <br />
         {resume.lastName}
       </h1>
-      <section className="mt-0.5 md:mt-1.5 text-sm font-medium">
+      <div className="mt-0.5 md:mt-1.5 text-sm font-medium">
         <a className="link" href={`mailto:${resume.email}`}>
           {resume.email}
         </a>
-      </section>
+      </div>
       <div className="pr-8">
         <section className="mt-12">
           {resume.summary.map((text, index) => (
@@ -45,28 +46,31 @@ export default function Home() {
             ].map((skill) => (
               <span
                 key={skill}
-                className="mr-1 inline-flex items-center px-2 py-0.5 rounded text-xs font-medium bg-yellow-200 text-gray-800"
+                className="inline-flex items-center mr-1 px-2 py-0.5 rounded text-xs font-medium bg-yellow-200 text-gray-800"
               >
                 {skill}
               </span>
             ))}
           </div>
         </section>
-        <Timeline>
-          {resume.timeline.map((event, index) => {
-            const job = event as Job;
-            if (job.employer) {
-              return <Timeline.Job key={index} {...job} />;
-            }
+        <section className="flow-root">
+          <h2 className="mt-12 text-2xl font-extrabold uppercase">
+            Experience
+          </h2>
+          <ul className="mt-4 -mb-8">
+            {resume.timeline.map((event, index) => {
+              let Event = null;
 
-            const milestone = event as Milestone;
-            if (milestone.milestone) {
-              return <Timeline.Milestone key={index} {...milestone} />;
-            }
+              if (event.type === "JOB") {
+                Event = Job;
+              } else if (event.type === "MILESTONE") {
+                Event = Milestone;
+              }
 
-            return null;
-          })}
-        </Timeline>
+              return <Event key={index} {...event} />;
+            })}
+          </ul>
+        </section>
       </div>
     </Layout>
   );

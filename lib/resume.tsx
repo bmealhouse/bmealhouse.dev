@@ -1,12 +1,11 @@
 import { ReactNode } from "react";
-import {
-  AmanoMcGannLogo,
-  BestBuyLogo,
-  GeneralMillsLogo,
-  ImationLogo,
-  QubedLogo,
-  SecurianLogo,
-} from "./logos";
+
+import { AmanoMcGannLogo } from "@/logos/amano-mcgann";
+import { BestBuyLogo } from "@/logos/best-buy";
+import { GeneralMillsLogo } from "@/logos/general-mills";
+import { ImationLogo } from "@/logos/imation";
+import { QubedLogo } from "@/logos/qubed";
+import { SecurianLogo } from "@/logos/securian";
 
 interface Resume {
   firstName: string;
@@ -34,14 +33,13 @@ export const resume: Resume = {
   ],
   timeline: [
     {
-      logo: SecurianLogo,
-      logoBackgroundColor: "#0c7b40",
+      type: "JOB",
       title: "Lead JavaScript Developer",
       company: "Securian",
       startDate: new Date("03/01/2018"),
       endDate: new Date("04/01/2021"),
       employer: "Independent",
-      type: "Consultant",
+      employmentType: "Consultant",
       description: (
         <>
           Mentored a small team of talented developers, building Benefit Scout –
@@ -100,16 +98,17 @@ export const resume: Resume = {
         "CloudFront",
         "CloudFormation",
       ],
+      logo: SecurianLogo,
+      logoBackgroundColor: "#0c7b40",
     },
     {
-      logo: AmanoMcGannLogo,
-      logoBackgroundColor: "#006ba6",
+      type: "JOB",
       title: "Lead JavaScript Developer",
       company: "Amano McGann",
       startDate: new Date("01/01/2017"),
       endDate: new Date("02/01/2018"),
       employer: "Independent",
-      type: "Consultant",
+      employmentType: "Consultant",
       description: (
         <>
           Architecture for Amano McGann’s future frontend platform and design
@@ -161,16 +160,17 @@ export const resume: Resume = {
         "VSTS CI/CD",
         "Azure",
       ],
+      logo: AmanoMcGannLogo,
+      logoBackgroundColor: "#006ba6",
     },
     {
-      logo: BestBuyLogo,
-      logoBackgroundColor: "#0046be",
+      type: "JOB",
       title: "Lead JavaScript Developer",
       company: "Best Buy",
       startDate: new Date("12/01/2014"),
       endDate: new Date("11/01/2016"),
       employer: "Independent",
-      type: "Consultant",
+      employmentType: "Consultant",
       description: (
         <>
           Developed A/B tests across bestbuy.com to determine what features
@@ -220,16 +220,17 @@ export const resume: Resume = {
         "Git",
         "OpenStack",
       ],
+      logo: BestBuyLogo,
+      logoBackgroundColor: "#0046be",
     },
     {
-      logo: ImationLogo,
-      logoBackgroundColor: "#cf152d",
+      type: "JOB",
       title: "Lead JavaScript Developer",
       company: "Imation",
       startDate: new Date("08/01/2014"),
       endDate: new Date("12/01/2014"),
       employer: "Independent",
-      type: "Consultant",
+      employmentType: "Consultant",
       description: (
         <>
           Built a lightweight JavaScript architecture around Eloqua’s email
@@ -268,16 +269,17 @@ export const resume: Resume = {
         "Jenkins",
         "Eloqua",
       ],
+      logo: ImationLogo,
+      logoBackgroundColor: "#cf152d",
     },
     {
-      logo: GeneralMillsLogo,
-      logoBackgroundColor: "#0d5195",
+      type: "JOB",
       title: "JavaScript Developer",
       company: "General Mills",
       startDate: new Date("11/01/2013"),
       endDate: new Date("08/01/2014"),
       employer: "Independent",
-      type: "Consultant",
+      employmentType: "Consultant",
       description: (
         <>
           Contributed to General Mills’ shared component library used by
@@ -313,10 +315,11 @@ export const resume: Resume = {
         "TFS",
         "Sitecore",
       ],
+      logo: GeneralMillsLogo,
+      logoBackgroundColor: "#0d5195",
     },
     {
-      logo: QubedLogo,
-      logoBackgroundColor: "#27272a",
+      type: "MILESTONE",
       milestone: "Founded Qubed, Inc.",
       date: new Date("08/01/2013"),
       description: (
@@ -325,33 +328,37 @@ export const resume: Resume = {
           and begin my quest for ultimate freedom.
         </>
       ),
+      technologies: [],
+      logo: QubedLogo,
+      logoBackgroundColor: "#27272a",
       connectorVisibile: false,
     },
   ],
 };
 
-export interface Job {
+type Event = JobEvent | MilestoneEvent;
+
+interface BaseEvent {
+  type: "JOB" | "MILESTONE";
+  description: ReactNode;
+  technologies: string[];
   logo?: ReactNode;
   logoBackgroundColor?: string;
+  connectorVisibile?: boolean;
+}
+
+export interface JobEvent extends BaseEvent {
   title: string;
   company?: string;
   startDate: Date;
   endDate?: Date;
   employer: string;
-  type: "Consultant" | "Contract" | "FTE" | "Internship" | "Owner";
-  description: ReactNode;
+  employmentType: "Consultant" | "Contract" | "FTE" | "Internship" | "Owner";
   bullets: ReactNode[];
-  technologies: string[];
 }
 
-export interface Milestone {
-  logo?: ReactNode;
-  logoBackgroundColor?: string;
+export interface MilestoneEvent extends BaseEvent {
   icon?: ReactNode;
   milestone: ReactNode;
-  date?: Date;
-  description?: ReactNode;
-  connectorVisibile?: boolean;
+  date: Date;
 }
-
-type Event = Job | Milestone;
