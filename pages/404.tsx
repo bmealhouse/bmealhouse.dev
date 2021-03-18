@@ -4,7 +4,7 @@ import { Container } from "@/components/container";
 
 export default function BMealhouse404() {
   return (
-    <Container>
+    <Container title="404 - Brent Mealhouse">
       <main className="space-y-14 text-center">
         <div className="font-black">
           <h1 className="text-9xl text-yellow-300 dark:text-yellow-200">404</h1>

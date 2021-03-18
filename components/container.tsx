@@ -3,6 +3,7 @@ import Head from "next/head";
 import { useRouter } from "next/router";
 
 interface Props {
+  [prop: string]: any;
   children: ReactNode;
 }
 
