@@ -30,6 +30,10 @@ export const resume: Resume = {
       I am currently interested in cloud-based React and Node.js projects using
       serverless architecture. Let me know how I can help.
     </>,
+    <>
+      When I'm not building software, I enjoy golfing and spending time with my
+      wife and two daughters at our northern Minnesota lake home.
+    </>,
   ],
   timeline: [
     {
@@ -50,8 +54,9 @@ export const resume: Resume = {
       ),
       bullets: [
         <>
-          Led full-stack development across several repositories using React
-          Query, TypeScript, Node.js, Serverless, DynamoDB, and ElastiCache
+          Led full-stack development across several repositories using React,
+          React Query, TypeScript, Node.js, Serverless, DynamoDB, and
+          ElastiCache
         </>,
         <>
           Regularly contributed to Securian’s design system built with React,
@@ -59,19 +64,17 @@ export const resume: Resume = {
         </>,
         <>
           Deployed as often as possible through CI/CD using feature flags to
-          keep our master branches deployable
+          keep our main branch deployable
         </>,
         <>
-          Created a powerful integration test suite on top of Jest and React
+          Created a robust integration test suite on top of Jest and React
           Testing Library with automatic mocking and client emulation
         </>,
         <>
           Supported and enhanced our chatbot, Scout, using Amazon Lex and Amazon
           SageMaker
         </>,
-        <>
-          Usually, pair programmed or mobbed on stories when it provided value
-        </>,
+        <>Pair programmed or mobbed on stories when it provided value</>,
       ],
       technologies: [
         "JavaScript",
