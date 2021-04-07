@@ -49,7 +49,23 @@ export default class BMealhouseDocument extends Document {
           />
           <script
             dangerouslySetInnerHTML={{
-              __html: `if(window.matchMedia('(prefers-color-scheme:dark)').matches){document.querySelector("html").classList.add('dark');}else{document.querySelector("html").classList.remove('dark');}`,
+              __html: `if (window.matchMedia('(prefers-color-scheme:dark)').matches) {
+  document.querySelector("html").classList.add('dark');
+} else {
+  document.querySelector("html").classList.remove('dark');
+}`,
+            }}
+          />
+          <script
+            async
+            src="https://www.googletagmanager.com/gtag/js?id=G-GJE08LTPTB"
+          />
+          <script
+            dangerouslySetInnerHTML={{
+              __html: `window.dataLayer = window.dataLayer || [];
+function gtag() { dataLayer.push(arguments); }
+gtag('js', new Date());
+gtag('config', 'G-GJE08LTPTB');`,
             }}
           />
         </Head>
