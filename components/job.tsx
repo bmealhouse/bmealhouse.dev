@@ -32,7 +32,7 @@ export const Job = ({
   return (
     <li>
       <div className="relative pb-8">
-        {connectorVisibile ? <EventConnector /> : null}
+        {connectorVisibile && <EventConnector />}
         <div className="relative flex items-start space-x-3">
           <EventLogoWrapper backgroundColor={logoBackgroundColor}>
             {logo}
@@ -47,13 +47,13 @@ export const Job = ({
             </div>
             <div className="mt-1 font-light">
               <p>{description}</p>
-              {bullets.length > 0 ? (
+              {bullets.length > 0 && (
                 <ul className="mt-2 ml-7 list-disc text-sm text-gray-800 dark:text-gray-300">
                   {bullets.map((text, index) => (
                     <li key={index}>{text}</li>
                   ))}
                 </ul>
-              ) : null}
+              )}
             </div>
           </div>
         </div>

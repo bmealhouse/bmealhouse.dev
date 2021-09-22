@@ -31,8 +31,8 @@ export const resume: Resume = {
       serverless architecture. Let me know how I can help.
     </>,
     <>
-      When I'm not building software, I enjoy golfing and spending time with my
-      wife and two daughters at our northern Minnesota lake home.
+      When I&apos;m not building software, I enjoy golfing and spending time
+      with my wife and two daughters at our northern Minnesota lake home.
     </>,
   ],
   timeline: [

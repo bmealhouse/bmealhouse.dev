@@ -17,15 +17,15 @@ export const Milestone = ({
   <>
     <li>
       <div className="relative pb-8">
-        {connectorVisibile ? <EventConnector /> : null}
+        {connectorVisibile && <EventConnector />}
         <div className="relative flex items-start space-x-3">
           {logo ? (
             <EventLogoWrapper backgroundColor={logoBackgroundColor}>
               {logo}
             </EventLogoWrapper>
-          ) : icon ? (
-            <EventIconWrapper>{icon}</EventIconWrapper>
-          ) : null}
+          ) : (
+            icon && <EventIconWrapper>{icon}</EventIconWrapper>
+          )}
           <div className={`min-w-0 flex-1 ${logo ? "py-2.5" : "py-1.5"}`}>
             <h3 className="inline font-bold text-lg leading-tight">
               {milestone}

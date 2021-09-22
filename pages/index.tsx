@@ -65,7 +65,7 @@ export default function Home() {
           </h2>
           <ul className="mt-4 -mb-8">
             {resume.timeline.map((event, index) => {
-              let Event = null;
+              let Event;
 
               if (event.type === "JOB") {
                 Event = Job;
