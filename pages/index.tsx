@@ -39,6 +39,7 @@ export default function Home() {
               "React Testing Library",
               "Node.js",
               "AWS",
+              "SAM",
               "Serverless",
               "DynamoDB",
               "ElastiCache",
