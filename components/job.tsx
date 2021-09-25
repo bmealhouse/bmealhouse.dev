@@ -22,11 +22,18 @@ export const Job = ({
     endDate ? format(endDate, "MMM yyyy") : "present"
   }`;
 
-  let employmentTypeText: string = employmentType;
-  if (employmentType === "Consultant") {
-    employmentTypeText = `${employer} ${employmentType.toLowerCase()}`;
-  } else if (employmentType === "Contract") {
-    employmentTypeText = `${employer} ${employmentType.toLowerCase()}`;
+  let employmentTypeText: string;
+  switch (employmentType) {
+    case "Consultant":
+    case "Contract":
+      employmentTypeText = `${employer} ${employmentType.toLowerCase()}`;
+      break;
+    case "FTE":
+      employmentTypeText = undefined;
+      break;
+    default:
+      employmentTypeText = employmentType;
+      break;
   }
 
   return (
@@ -42,8 +49,13 @@ export const Job = ({
               {title}, {company ? company : employer}
             </h3>
             <div className="text-sm text-gray-500">
-              {tenure} <span aria-hidden="true">/</span>&nbsp;
-              {employmentTypeText}
+              {tenure}
+              {employmentTypeText && (
+                <>
+                  &nbsp;<span aria-hidden="true">/</span>&nbsp;
+                  {employmentTypeText}
+                </>
+              )}
             </div>
             <div className="mt-1 font-light">
               <p>{description}</p>

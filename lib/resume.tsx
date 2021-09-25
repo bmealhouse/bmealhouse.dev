@@ -1,5 +1,6 @@
 import { ReactNode } from "react";
 
+import { AboundLogo } from "@/logos/abound";
 import { AmanoMcGannLogo } from "@/logos/amano-mcgann";
 import { BestBuyLogo } from "@/logos/best-buy";
 import { GeneralMillsLogo } from "@/logos/general-mills";
@@ -20,15 +21,30 @@ export const resume: Resume = {
   lastName: "Mealhouse",
   email: "bmealhouse@gmail.com",
   summary: [
+    // <>
+    //   I’m an independent consultant specializing in full-stack JavaScript
+    //   development. I am passionate about web technologies, open-source,
+    //   continuous delivery, code quality, and automation. I am committed to
+    //   delivering value to my customers and leading teams to success.
+    // </>,
+    // <>
+    //   I am currently interested in cloud-based React and Node.js projects using
+    //   serverless architecture. Let me know how I can help.
+    // </>,
     <>
-      I’m an independent consultant specializing in full-stack JavaScript
-      development. I am passionate about web technologies, open-source,
-      continuous delivery, code quality, and automation. I am committed to
-      delivering value to my customers and leading teams to success.
-    </>,
-    <>
-      I am currently interested in cloud-based React and Node.js projects using
-      serverless architecture. Let me know how I can help.
+      I’m a Software Engineer @{" "}
+      <a
+        className="link"
+        href="https://withabound.com"
+        target="_blank"
+        rel="noreferrer"
+      >
+        Abound
+      </a>
+      , on a mission to build the future independent workers want to work in. I
+      am passionate about web technologies, open-source, continuous delivery,
+      code quality, and automation. I am committed to delivering value to our
+      customers.
     </>,
     <>
       When I&apos;m not building software, I enjoy golfing and spending time
@@ -36,6 +52,37 @@ export const resume: Resume = {
     </>,
   ],
   timeline: [
+    {
+      type: "JOB",
+      title: "Software Engineer",
+      company: "Abound",
+      startDate: new Date("04/01/2021"),
+      employer: "Abound",
+      employmentType: "FTE",
+      description: "",
+      bullets: [],
+      technologies: [
+        "JavaScript",
+        "TypeScript",
+        "React",
+        "HTML",
+        "CSS",
+        "Node.js",
+        "Jest",
+        "React Testing Library",
+        "XO",
+        "Prettier",
+        "Yarn",
+        "GitHub",
+        "AWS",
+        "SAM",
+        "DynamoDB",
+        "CloudFront",
+        "CloudFormation",
+      ],
+      logo: AboundLogo,
+      logoBackgroundColor: "#f9fafb",
+    },
     {
       type: "JOB",
       title: "Lead JavaScript Developer",
