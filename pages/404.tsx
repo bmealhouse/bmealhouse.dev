@@ -15,8 +15,8 @@ export default function BMealhouse404() {
         <nav>
           <ul>
             <li>
-              <Link href="/">
-                <a className="link">Home</a>
+              <Link className="link" href="/">
+                Home
               </Link>
             </li>
           </ul>
