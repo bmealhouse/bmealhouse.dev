@@ -32,7 +32,7 @@ export const resume: Resume = {
     //   serverless architecture. Let me know how I can help.
     // </>,
     <>
-      I’m a Software Engineer @{" "}
+      I&apos;m a Principal Software Engineer @{" "}
       <a
         className="link"
         href="https://withabound.com"
@@ -41,10 +41,9 @@ export const resume: Resume = {
       >
         Abound
       </a>
-      , on a mission to build the future independent workers want to work in. I
-      am passionate about web technologies, open-source, continuous delivery,
-      code quality, and automation. I am committed to delivering value to our
-      customers.
+      , on a mission to build modern API solutions for 1099 tax compliance. I am
+      passionate about web technologies, open-source, continuous delivery, code
+      architecture/quality, and automation.
     </>,
     <>
       When I&apos;m not building software, I enjoy golfing and spending time
@@ -54,13 +53,45 @@ export const resume: Resume = {
   timeline: [
     {
       type: "JOB",
-      title: "Software Engineer",
+      title: "Principal Software Engineer",
       company: "Abound",
       startDate: new Date("04/01/2021"),
       employer: "Abound",
       employmentType: "FTE",
-      description: "",
-      bullets: [],
+      description: (
+        <>
+          Architecture and development of Abound&apos;s API, UI embeddables, and
+          government system integrations.
+        </>
+      ),
+      bullets: [
+        <>
+          Redesigned Abound&apos;s public-facing API with a focus on consistency
+          and developer experience, using Zod schema validation and type safety
+          to enforce data integrity
+        </>,
+        <>
+          Architected Abound&apos;s 1099 filing system, which processes large
+          volumes of electronic filings, adhering to strict federal and
+          state-specific requirements
+        </>,
+        <>
+          Built a real-time TIN verification system, using SQS for asynchronous
+          verifications when the IRS is degraded or unavailable
+        </>,
+        <>
+          Significantly reduced AWS Lambda code size from over 20 MB per
+          function to less than 20 KB per function
+        </>,
+        <>
+          Optimized our daily development workflow for fast feedback, easy code
+          sharing, and improved reliability and confidence through CI/CD
+        </>,
+        <>
+          Created custom ESLint rules to ensure safe reads/writes in a
+          multi-tenant system
+        </>,
+      ],
       technologies: [
         "JavaScript",
         "TypeScript",
@@ -70,12 +101,13 @@ export const resume: Resume = {
         "Node.js",
         "Jest",
         "React Testing Library",
-        "XO",
+        "ESLint",
         "Prettier",
         "Yarn",
         "GitHub",
         "AWS",
         "SAM",
+        "SQS",
         "DynamoDB",
         "CloudFront",
         "CloudFormation",
@@ -285,7 +317,7 @@ export const resume: Resume = {
         <>
           Built a lightweight JavaScript architecture around Eloqua’s email
           marketing system with support for automatic form population and{" "}
-          progressing profiling.
+          progressive profiling.
         </>
       ),
       bullets: [
