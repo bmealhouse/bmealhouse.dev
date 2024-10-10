@@ -31,7 +31,7 @@ export const Layout = ({ children, ...metaOverrides }: Props) => (
         </a>
         <a
           className="py-1 rounded focus:outline-none focus:ring-2 focus:ring-offset-2"
-          href="/bmealhouse-resume-2021.pdf"
+          href="/bmealhouse-resume-2024.pdf"
           target="_blank"
         >
           <span className="sr-only">PDF resume</span>
