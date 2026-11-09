@@ -25,15 +25,18 @@ export const Job = ({
   let employmentTypeText: string;
   switch (employmentType) {
     case "Consultant":
-    case "Contract":
+    case "Contract": {
       employmentTypeText = `${employer} ${employmentType.toLowerCase()}`;
       break;
-    case "FTE":
+    }
+    case "FTE": {
       employmentTypeText = undefined;
       break;
-    default:
+    }
+    default: {
       employmentTypeText = employmentType;
       break;
+    }
   }
 
   return (
@@ -46,7 +49,7 @@ export const Job = ({
           </EventLogoWrapper>
           <div className="min-w-0 flex-1">
             <h3 className="font-bold leading-tight">
-              {title}, {company ? company : employer}
+              {title}, {company || employer}
             </h3>
             <div className="text-sm text-gray-500">
               {tenure}

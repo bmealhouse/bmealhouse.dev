@@ -1,21 +1,21 @@
-import { useEffect, useState } from "react";
+import { useSyncExternalStore } from "react";
+
+const subscribe = (onChange: () => void) => {
+  const observer = new MutationObserver(onChange);
+  observer.observe(document.documentElement, { attributeFilter: ["class"] });
+  return () => observer.disconnect();
+};
+
+const getSnapshot = () => document.documentElement.classList.contains("dark");
+
+const getServerSnapshot = (): boolean | undefined => undefined;
 
 export const DarkModeToggle = () => {
-  const [isDark, setIsDark] = useState<boolean>();
-
-  useEffect(() => {
-    if (isDark !== undefined) {
-      if (isDark) {
-        document.querySelector("html").classList.add("dark");
-      } else {
-        document.querySelector("html").classList.remove("dark");
-      }
-    }
-  }, [isDark]);
-
-  useEffect(() => {
-    setIsDark(document.querySelector("html").classList.contains("dark"));
-  }, []);
+  const isDark = useSyncExternalStore(
+    subscribe,
+    getSnapshot,
+    getServerSnapshot
+  );
 
   let toggleIcon;
   if (isDark !== undefined) {
@@ -53,7 +53,7 @@ export const DarkModeToggle = () => {
       type="button"
       className="inline-flex items-center px-3 py-2 border border-transparent shadow-sm rounded-md text-gray-800 bg-yellow-200 hover:bg-yellow-300 focus:outline-none focus:ring-2 focus:ring-offset-2"
       onClick={() => {
-        setIsDark((previousValue) => !previousValue);
+        document.documentElement.classList.toggle("dark");
       }}
     >
       {toggleIcon}

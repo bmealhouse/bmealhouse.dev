@@ -7,7 +7,7 @@ export const BackToTop = () => {
 
   const handleScroll = () => {
     if (!ticking) {
-      window.requestAnimationFrame(() => {
+      globalThis.requestAnimationFrame(() => {
         setScrollPosition(window.scrollY);
         ticking = false;
       });
